@@ -9,6 +9,8 @@ output: html_document
 
 library(tidyverse)
 library(readxl)
+library(dplyr)
+library(ggplot2)
 
 
 ```
@@ -16,7 +18,104 @@ library(readxl)
 ```{r load_data}
 
 TEST_coral <- read_excel("TEST_2018_bisc_coral_health_data.xlsx")
+TEST_fish <- read_excel("TEST_RVC_Data_2018 2.xlsx")
 
+
+```
+
+```{r data_exploration}
+
+hogfish <- TEST_RVC_Data_2018_2 %>%
+  filter(fish_com == "hogfish") %>%
+  select(f_1, f_2, f_3, f_4, f_5, f_6, f_7, f_8, f_9) %>%
+  
+hogfish_total <- TEST_RVC_Data_2018_2 %>%
+  filter(fish_com == "hogfish") %>%
+  select(f_1, f_2, f_3, f_4, f_5) 
+
+hogfish_total[is.na(hogfish_total)] <- 0
+
+hogfish_one <- hogfish_total%>%
+  select
+
+
+
+#hist_hog <- hist(hogfish_total)
+
+one <- as.vector(hogfish_total [,1])
+two <- as.vector(hogfish_total [,2])
+three <- as.vector(hogfish_total [,3])
+four <- as.vector(hogfish_total [,4])
+five<- as.vector(hogfish_total [,5])
+
+numbers <- scan(hogfish, "numbers")
+
+lapply(hogfish, as.numeric)
+
+hist(hogfish)
+
+
+  
+
+
+hist(hogfish)
+
+hogfish
+
+
+
+```
+```{r}
+
+
+hogfish_test <- TEST_fish %>%
+  filter(fish_com == "hogfish") %>%
+  select(fish_com,f_1, f_2, f_3, f_4, f_5, f_6, f_7, f_8, f_9) 
+
+hogfish_test[is.na(hogfish_test)] <- 0
+
+hogfish_one <- hogfish_test%>%
+  select (f_1) %>%
+  filter(f_1 >0)
+colnames(hogfish_one) <- c("total")
+
+hogfish_two <- hogfish_test%>%
+  select (f_2) %>%
+  filter(f_2 >0)
+colnames(hogfish_two) <- c("total")
+
+hogfish_three <- hogfish_test%>%
+  select (f_3) %>%
+  filter(f_3 >0)
+colnames(hogfish_three) <- c("total")
+
+hogfish_four <- hogfish_test%>%
+  select (f_4) %>%
+  filter(f_4 >0)
+colnames(hogfish_four) <- c("total")
+
+hogfish_five <- hogfish_test%>%
+  select (f_5) %>%
+  filter(f_5 >0)
+colnames(hogfish_five) <- c("total")
+
+f_1 <- hogfish_one$total
+f_2 <- hogfish_two$total
+f_3 <- hogfish_three$total
+f_4 <- hogfish_four$total
+f_5 <- hogfish_five$total
+
+hf_total <- c(f_1, f_2, f_3, f_4, f_5 )
+hf_total_vector <- as.numeric(hf_total_vector)
+
+hist(hf_total_vector)
+
+ggplot() +
+  aes(hf_total_vector) +
+  geom_histogram(binwidth = 1, colour = "navy", fill = "white")+
+  xlab("Hogfish Size (cm)")+
+  ylab("Count")+
+  ggtitle("Hogfish Size Distribution 2018")
 
 
 ```
