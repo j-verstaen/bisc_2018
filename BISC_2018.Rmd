@@ -11,7 +11,7 @@ library(tidyverse)
 library(readxl)
 library(dplyr)
 library(ggplot2)
-
+library(vegan) #for species diversity calculations
 
 ```
 
@@ -76,7 +76,7 @@ ggplot() +
   xlab("Hogfish Size (cm)")+
   ylab("Count")+
   ggtitle("Hogfish Size Distribution 2018")+
-  geom_vline(xintercept = 40)+
+  geom_vline(xintercept = 40.64)+
   theme_bw()
 
 
@@ -112,6 +112,7 @@ sidrad <- TEST_coral %>%
 sid_rad <- sidrad$percent_alive
 sid_rad <- as.numeric(sid_rad)
 
+###stoped mid thought
 graph <- 
   ggplot(data = coral_bleaching, aes(x =coral_species, y = coral_bleaching))+
   geom_bar
@@ -123,11 +124,60 @@ graph
 
 
 
+```{r diversity_function}
+
+TEST_coral_species_numbers <- read_excel("TEST_coral_species_numbers.xlsx")
+
+#remember the last line of data here is the total of all sites##
+c_shan <- diversity(TEST_coral_species_numbers)
+c_shan
+
+#plot(c_shan)
+
+```
+
+##Is coral cover corelated with percent bleached?
+
+I noticed that there was a lot more bleaching when there was a higher percent coral cover. Now obviously this makes sense off the bat because there can't be much bleaching if there isn't a lot of coral. However it seems like the percentage of bleaching was higher when coral cover was higher. This is exploring that possbility.
 
 
+```{r coral_cover_bleaching}
+
+TEST_coral_cover <- read_excel("TEST_coral_cover.xlsx")
+
+coral_cover_bleach <- TEST_coral_cover %>%
+  select(coral_cover, percent_bleached) %>%
+  filter(coral_cover != 0)
+
+ggplot(coral_cover_bleach, aes(x=coral_cover, y= percent_bleached)) +
+  geom_point()
+
+coral_cover_bleach_lm <- lm(percent_bleached ~ coral_cover, data = coral_cover)
+coral_cover_bleach_lm
+
+#summary of model
+summary(coral_cover_bleach_lm)
+
+#data diagnostics
+par(mfrow = c(2,2))
+plot(coral_cover_bleach_lm)
+# qqplot is a little off but not terribly
+# resifuals fit is skewed to the right and I'm not quite sure what that means, if it means anything
 
 
+#correlation: person's r
+correlation_cover_bleach <- cor.test(coral_cover_bleach$coral_cover, coral_cover_bleach$percent_bleached)
+correlation_cover_bleach
+# not significant. p-value = 0.2869
+```
 
+#Model
+Percent Coral Bleaching = 0.08837 -0.66218(Percent Coral Cover_)
+R$^2$ = 0.043 
+4.3% of variance in percent of coral bleaching is exlained by percent of coral cover. 
+
+#Correlation
+There is no significant correlation between coral cover and percent bleached (Pearson's *r* = -0.209???,t(28)= -1.0873, *p* =  0.2869).
 
 
 
