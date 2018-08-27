@@ -20,6 +20,9 @@ library(vegan) #for species diversity calculations
 TEST_coral <- read_excel("TEST_2018_bisc_coral_health_data.xlsx")
 TEST_fish <- read_excel("TEST_RVC_Data_2018 2.xlsx")
 
+TEST_coral_species_numbers <- read_excel("TEST_coral_species_numbers.xlsx")
+TEST_coral_cover <- read_excel("TEST_coral_cover.xlsx")
+
 
 ```
 
@@ -179,6 +182,35 @@ R$^2$ = 0.043
 #Correlation
 There is no significant correlation between coral cover and percent bleached (Pearson's *r* = -0.209???,t(28)= -1.0873, *p* =  0.2869).
 
+##Fish and Coral Correlations
+
+```{r coralcover_fishabundance}
+
+TEST_RVC_Fish_condensed <- read_excel("TEST_RVC_Fish_condensed.xlsx")
+
+fish_coral <- merge(TEST_RVC_Fish_condensed, TEST_coral_cover, by = "site")
+
+#how does coral cover and bleaching effect the hog fish abundance
+hog_coral <- fish_coral %>%
+  filter( fish_com == "hogfish" | fish_com =="none") %>%
+  select(fish_num, f_avg, coral_cover, percent_bleached, percent_diseased, paling) 
+
+hog_coral_lm <- lm(formula = fish_num ~  coral_cover + percent_bleached +percent_diseased + paling, data = hog_coral)
+hog_coral_lm
+
+summary(hog_coral_lm)
+
+#how does the coral cover and bleaching effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish") %>%
+  select(fish_num, f_avg, coral_cover, percent_bleached, percent_diseased, paling) 
+
+gamefish_coral_lm <- lm(formula = fish_num ~ coral_cover + percent_bleached +percent_diseased + paling, data = gamefish_coral)
+gamefish_coral_lm
+
+summary(gamefish_coral_lm)
+
+```
 
 
 
