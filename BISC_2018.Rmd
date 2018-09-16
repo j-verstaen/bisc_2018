@@ -182,6 +182,7 @@ correlation_game_percentpb
   
 ## DOES CORAL HEALTH (cover, % of coral bleaching, percent of coral diseased, whether or not paling) EFFECT GAME FISH NUMBERS##
 
+##put off until figure out how to deal with NAs and in the coral bleaching (/the other columns)
 ```{r}
 
 ###########################################################################
