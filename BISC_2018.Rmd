@@ -185,15 +185,15 @@ correlation_game_percentpb
 ##put off until figure out how to deal with NAs and in the coral bleaching (/the other columns)
 ```{r}
 
+##########################################################################
 ###########################################################################
-####this is the same chunk of code for all coral and game fish analysis###
 fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
-coral <- read_excel("2018_bisc_coral_cover.xlsx")
+coral_negs <- read_excel("2018_bisc_coral_cover_negs.xlsx")
 
-fish_coral <- merge(fish, coral, by = "site")
+fish_coral <- merge(fish, coral_negs, by = "site")
 
 #how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
-gamefish_coral <- fish_coral %>%
+gamefish_coral_negs <- fish_coral %>%
   filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
   select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, paling_coral, percent_paling, percent_p_b) 
 ##########################################################################
@@ -203,7 +203,8 @@ gamefish_coral_lm_percentb_binarypale
 
 summary(gamefish_coral_lm_percentb_binarypale)
 
-
+##########################################################################
+##########################################################################
 ##REMOVED NAS FORM CORAL BLEACHING# means that removing the data where there is no coral cover, I don't love that/ will try to find a way around it
 #how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
 gamefish_coral_removeNAlines <- fish_coral %>%
@@ -219,6 +220,58 @@ summary(gamefish_coral_lm_percentb_binarypale_noNA)
 ```
 
 ## DOES CORAL HEALTH (cover, percent of coral experiencing bleaching, disease, paling) EFFECT GAME FISH NUMBERS##
+- going to continue on with -1 instead of removing NAs
+
+```{r}
+
+##########################################################################
+###########################################################################
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral_negs <- read_excel("2018_bisc_coral_cover_negs.xlsx")
+
+fish_coral <- merge(fish, coral_negs, by = "site")
+
+#how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral_negs <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, paling_coral, percent_paling, percent_p_b) 
+##########################################################################
+
+gamefish_coral_lm_percentindbleachpale <- lm(formula = fish_num ~ coral_cover + percent_ind_bleached + percent_paling, data = gamefish_coral)
+gamefish_coral_lm_percentindbleachpale
+
+summary(gamefish_coral_lm_percentindbleachpale)
+```
+
+
+##PCA (Attempts)
+
+```{r}
+
+gamefish_coral_PCA <- prcomp(gamefish_coral_negs, scale=TRUE)
+gamefish_coral_PCA
+
+plot(gamefish_coral_PCA)
+
+summary(gamefish_coral_PCA)
+
+biplot(gamefish_coral_PCA)
+
+```
+
+##Cluster Analysis
+
+```{r}
+
+
+
+```
+
+
+
+
+
+
 
   
   
