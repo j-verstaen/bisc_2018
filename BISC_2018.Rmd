@@ -69,7 +69,6 @@ correlation_cover_bleach
 ##THIS LOOKS AT PERCENT OF THE NUMBERS OF CORALS BLEACHED. NOT THE AMOUNT BLEACHED##
 ```{r}
 
-
 coral_number_bleach <- coral %>%
   select(coral_cover, percent_ind_bleached) %>%
   filter(coral_cover != 0)
@@ -97,9 +96,129 @@ correlation_number_bleach <- cor.test(coral_number_bleach$coral_cover, percent_i
 correlation_number_bleach
 # not significant. p-value = 0.3009
 ```
+##THIS LOOKS AT PERCENT OF THE NUMBERS OF CORALS BLEACHED AND/OR PALING. NOT THE AMOUNT BLEACHED##
+
+```{r}
+
+coral_bleach_pale <- coral %>%
+  select(coral_cover, percent_p_b) %>%
+  filter(coral_cover != 0)
+
+ggplot(coral_bleach_pale, aes(x=coral_cover, y= percent_p_b)) +
+  geom_point()
+
+coral_bleach_pale_lm <- lm(percent_p_b ~ coral_cover, data = coral_bleach_pale)
+coral_bleach_pale_lm
+
+#summary of model
+summary(coral_bleach_pale_lm)
+
+#data diagnostics
+par(mfrow = c(2,2))
+plot(coral_bleach_pale_lm)
+# qqplot is a little off but not terribly
+# resifuals fit is skewed to the right and I'm not quite sure what that means, if it means anything
+
+#had to make percent total bleached into its own vector cause r was freaking out. go figure
+percent_p_b_vec <- as.numeric(coral_bleach_pale$percent_p_b)
+
+#correlation: person's r
+correlation_bleach_pale <- cor.test(coral_bleach_pale$coral_cover, percent_p_b_vec)
+correlation_bleach_pale
+# not significant. p-value = 0.2712
+```
 
 
+  ##IS CORAL COVER CORRELATED WITH GROUPER, HOGFISH, and SNAPPER NUMBERS##
+  
+```{r}
+
+###########################################################################
+####this is the same chunk of code for all coral and game fish analysis###
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral <- read_excel("2018_bisc_coral_cover.xlsx")
+
+fish_coral <- merge(fish, coral, by = "site")
+
+#how does the coral cover and bleaching effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, percent_paling, paling_coral, percent_p_b) 
+##########################################################################
+
+#correlation: person's r
+correlation_game_coralcover <- cor.test(gamefish_coral$coral_cover, gamefish_coral$fish_num)
+correlation_game_coralcover
+# not significant. p-value = 0.9246
+#cor = 0.0079297
+
+```
+  
+## IS THERE A CORRELATIONS BETWEEN PERCENT OF CORALS THAT ARE PALING AND/OR BLEACHING AND GAME FISH
+```{r}
+
+###########################################################################
+####this is the same chunk of code for all coral and game fish analysis###
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral <- read_excel("2018_bisc_coral_cover.xlsx")
+
+fish_coral <- merge(fish, coral, by = "site")
+
+#how does the coral cover and bleaching effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, percent_paling, paling_coral, percent_p_b) 
+##########################################################################
+
+percent_p_b_vec_2 <- as.numeric(gamefish_coral$percent_p_b)
+
+#correlation: person's r
+correlation_game_percentpb <- cor.test(gamefish_coral$coral_cover, percent_p_b_vec_2)
+correlation_game_percentpb
+# significant. p-value = 0.00461
+#cor = -0.2498671. very weak/bacisally no correlation
+```
+
+  
+## DOES CORAL HEALTH (cover, % of coral bleaching, percent of coral diseased, whether or not paling) EFFECT GAME FISH NUMBERS##
+
+```{r}
+
+###########################################################################
+####this is the same chunk of code for all coral and game fish analysis###
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral <- read_excel("2018_bisc_coral_cover.xlsx")
+
+fish_coral <- merge(fish, coral, by = "site")
+
+#how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, paling_coral, percent_paling, percent_p_b) 
+##########################################################################
+
+gamefish_coral_lm_percentb_binarypale <- lm(formula = fish_num ~ coral_cover + percent_total_bleached + paling_coral, data = gamefish_coral)
+gamefish_coral_lm_percentb_binarypale
+
+summary(gamefish_coral_lm_percentb_binarypale)
 
 
+##REMOVED NAS FORM CORAL BLEACHING# means that removing the data where there is no coral cover, I don't love that/ will try to find a way around it
+#how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral_removeNAlines <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, paling_coral, percent_paling, percent_p_b) %>%
+  filter(percent_total_bleached != "NA")
+##########################################################################
 
+gamefish_coral_lm_percentb_binarypale_noNA <- lm(formula = fish_num ~ coral_cover + percent_total_bleached + paling_coral, data = gamefish_coral)
+gamefish_coral_lm_percentb_binarypale_noNA
+
+summary(gamefish_coral_lm_percentb_binarypale_noNA)
+```
+
+## DOES CORAL HEALTH (cover, percent of coral experiencing bleaching, disease, paling) EFFECT GAME FISH NUMBERS##
+
+  
+  
 
