@@ -1,9 +1,11 @@
 ---
 title: "BISC_2018"
-author: "Juliette Verstaen"
-date: "8/21/2018"
 output: html_document
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ```{r load_packages}
 
@@ -17,145 +19,32 @@ library(vegan) #for species diversity calculations
 
 ```{r load_data}
 
-TEST_coral <- read_excel("TEST_2018_bisc_coral_health_data.xlsx")
-TEST_fish <- read_excel("TEST_RVC_Data_2018 2.xlsx")
-
-TEST_coral_species_numbers <- read_excel("TEST_coral_species_numbers.xlsx")
-TEST_coral_cover <- read_excel("TEST_coral_cover.xlsx")
-
-
-```
-
-##2018 Hogfish Size Distribution 
-**last fish data update 08_21_2018**
-```{r}
-
-
-hogfish_test <- TEST_fish %>%
-  filter(fish_com == "hogfish") %>%
-  select(fish_com,f_1, f_2, f_3, f_4, f_5, f_6, f_7, f_8, f_9) 
-
-hogfish_test[is.na(hogfish_test)] <- 0
-
-hogfish_one <- hogfish_test%>%
-  select (f_1) %>%
-  filter(f_1 >0)
-colnames(hogfish_one) <- c("total")
-
-hogfish_two <- hogfish_test%>%
-  select (f_2) %>%
-  filter(f_2 >0)
-colnames(hogfish_two) <- c("total")
-
-hogfish_three <- hogfish_test%>%
-  select (f_3) %>%
-  filter(f_3 >0)
-colnames(hogfish_three) <- c("total")
-
-hogfish_four <- hogfish_test%>%
-  select (f_4) %>%
-  filter(f_4 >0)
-colnames(hogfish_four) <- c("total")
-
-hogfish_five <- hogfish_test%>%
-  select (f_5) %>%
-  filter(f_5 >0)
-colnames(hogfish_five) <- c("total")
-
-f_1 <- hogfish_one$total
-f_2 <- hogfish_two$total
-f_3 <- hogfish_three$total
-f_4 <- hogfish_four$total
-f_5 <- hogfish_five$total
-
-hf_total <- c(f_1, f_2, f_3, f_4, f_5 )
-hf_total_vector <- as.numeric(hf_total_vector)
-
-hist(hf_total_vector)
-
-ggplot() +
-  aes(hf_total_vector) +
-  geom_histogram(binwidth = 1, colour = "navy", fill = "white")+
-  xlab("Hogfish Size (cm)")+
-  ylab("Count")+
-  ggtitle("Hogfish Size Distribution 2018")+
-  geom_vline(xintercept = 40.64)+
-  theme_bw()
-
-
-```
-
-##Coral Data Wrangling and Exploration
-
-```{r coral_fun}
-
-coral_bleaching <- TEST_coral %>%
-  select("field_number", "quadrat", "coral_species", "percent_live", "percent_bleached") %>%
-  filter (coral_species != "NA")
-
-coral_siderastrea <- TEST_coral %>%
-  select("field_number", "quadrat", "coral_species", "percent_live", "percent_bleached") %>%
-  filter (coral_species != "NA") %>%
-  filter(coral_species == "siderastrea_radians" | coral_species == "siderastrea_siderea")
-
-sidsid <- TEST_coral %>%
-  select("field_number", "quadrat", "coral_species", "percent_live", "percent_bleached") %>%
-  filter (coral_species != "NA") %>%
-  filter(coral_species == "siderastrea_siderea")
-
-sid_sid <- sidsid$percent_alive
-sid_sid <- as.numeric(sid_sid)
-
-
-sidrad <- TEST_coral %>%
-  select("field_number", "quadrat", "coral_species", "percent_live", "percent_bleached") %>%
-  filter (coral_species != "NA") %>%
-  filter(coral_species == "siderastrea_radians")
-
-sid_rad <- sidrad$percent_alive
-sid_rad <- as.numeric(sid_rad)
-
-###stoped mid thought
-graph <- 
-  ggplot(data = coral_bleaching, aes(x =coral_species, y = coral_bleaching))+
-  geom_bar
-
-graph
-  
+coral <- read_excel("2018_bisc_coral_cover.xlsx")
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+gps_coord <- read_excel("bisc _rvc_2018 _sites .xlsx")
 
 ```
 
 
 
-```{r diversity_function}
-
-TEST_coral_species_numbers <- read_excel("TEST_coral_species_numbers.xlsx")
-
-#remember the last line of data here is the total of all sites##
-c_shan <- diversity(TEST_coral_species_numbers)
-c_shan
-
-#plot(c_shan)
-
-```
 
 ##Is coral cover corelated with percent bleached?
 
 I noticed that there was a lot more bleaching when there was a higher percent coral cover. Now obviously this makes sense off the bat because there can't be much bleaching if there isn't a lot of coral. However it seems like the percentage of bleaching was higher when coral cover was higher. This is exploring that possbility.
 
+##THIS LOOKS AT PERCENT TOTAL BLEACHED OF THE CORAL THAT IS PRESENT###
+```{r}
 
-```{r coral_cover_bleaching}
+coral <- read_excel("2018_bisc_coral_cover.xlsx")
 
-TEST_coral_cover <- read_excel("TEST_coral_cover.xlsx")
-
-coral_cover_bleach <- TEST_coral_cover %>%
-  select(coral_cover, percent_bleached) %>%
+coral_cover_bleach <- coral %>%
+  select(coral_cover, percent_total_bleached) %>%
   filter(coral_cover != 0)
 
-ggplot(coral_cover_bleach, aes(x=coral_cover, y= percent_bleached)) +
+ggplot(coral_cover_bleach, aes(x=coral_cover, y= percent_total_bleached)) +
   geom_point()
 
-coral_cover_bleach_lm <- lm(percent_bleached ~ coral_cover, data = coral_cover)
+coral_cover_bleach_lm <- lm(percent_total_bleached ~ coral_cover, data = coral_cover_bleach)
 coral_cover_bleach_lm
 
 #summary of model
@@ -167,55 +56,47 @@ plot(coral_cover_bleach_lm)
 # qqplot is a little off but not terribly
 # resifuals fit is skewed to the right and I'm not quite sure what that means, if it means anything
 
+#had to make percent total bleached into its own vector cause r was freaking out. go figure
+percent_total_b <- as.numeric(coral_cover_bleach$percent_total_bleached)
 
 #correlation: person's r
-correlation_cover_bleach <- cor.test(coral_cover_bleach$coral_cover, coral_cover_bleach$percent_bleached)
+correlation_cover_bleach <- cor.test(coral_cover_bleach$coral_cover, percent_total_b)
 correlation_cover_bleach
-# not significant. p-value = 0.2869
-```
-
-#Model
-Percent Coral Bleaching = 0.08837 -0.66218(Percent Coral Cover_)
-R$^2$ = 0.043 
-4.3% of variance in percent of coral bleaching is exlained by percent of coral cover. 
-
-#Correlation
-There is no significant correlation between coral cover and percent bleached (Pearson's *r* = -0.209???,t(28)= -1.0873, *p* =  0.2869).
-
-##Fish and Coral Correlations
-
-```{r coralcover_fishabundance}
-
-TEST_RVC_Fish_condensed <- read_excel("TEST_RVC_Fish_condensed.xlsx")
-
-fish_coral <- merge(TEST_RVC_Fish_condensed, TEST_coral_cover, by = "site")
-
-#how does coral cover and bleaching effect the hog fish abundance
-hog_coral <- fish_coral %>%
-  filter( fish_com == "hogfish" | fish_com =="none") %>%
-  select(fish_num, f_avg, coral_cover, percent_bleached, percent_diseased, paling) 
-
-hog_coral_lm <- lm(formula = fish_num ~  coral_cover + percent_bleached +percent_diseased + paling, data = hog_coral)
-hog_coral_lm
-
-summary(hog_coral_lm)
-
-#how does the coral cover and bleaching effect the game fish abundance (snappers, groupers, hogfish)
-gamefish_coral <- fish_coral %>%
-  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish") %>%
-  select(fish_num, f_avg, coral_cover, percent_bleached, percent_diseased, paling) 
-
-gamefish_coral_lm <- lm(formula = fish_num ~ coral_cover + percent_bleached +percent_diseased + paling, data = gamefish_coral)
-gamefish_coral_lm
-
-summary(gamefish_coral_lm)
+# not significant. p-value = 0.4654
 
 ```
 
+##THIS LOOKS AT PERCENT OF THE NUMBERS OF CORALS BLEACHED. NOT THE AMOUNT BLEACHED##
+```{r}
 
 
+coral_number_bleach <- coral %>%
+  select(coral_cover, percent_ind_bleached) %>%
+  filter(coral_cover != 0)
 
+ggplot(coral_number_bleach, aes(x=coral_cover, y= percent_ind_bleached)) +
+  geom_point()
 
+coral_number_bleach_lm <- lm(percent_ind_bleached ~ coral_cover, data = coral_number_bleach)
+coral_number_bleach_lm
+
+#summary of model
+summary(coral_number_bleach_lm)
+
+#data diagnostics
+par(mfrow = c(2,2))
+plot(coral_number_bleach_lm)
+# qqplot is a little off but not terribly
+# resifuals fit is skewed to the right and I'm not quite sure what that means, if it means anything
+
+#had to make percent total bleached into its own vector cause r was freaking out. go figure
+percent_ind_b_vec <- as.numeric(coral_number_bleach$percent_ind_bleached)
+
+#correlation: person's r
+correlation_number_bleach <- cor.test(coral_number_bleach$coral_cover, percent_ind_b_vec)
+correlation_number_bleach
+# not significant. p-value = 0.3009
+```
 
 
 

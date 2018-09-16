@@ -1,0 +1,556 @@
+NPS_Information:
+  Metadata_Purpose: CSDGM
+  Metadata_Purpose: NPS
+  Metadata_Purpose: OnlineData
+  NPS_Unit_Information:
+    NPS_Unit_Type: Park
+    NPS_Unit_AlphaCode: BISC
+  Datacat_Information:
+    Datacat_Edit_Date:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+  Data_Store_Information:
+    Data_Steward:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Stephanie O'Meara
+          Contact_Organization: Colorado State University
+        Contact_Position: Research Associate, Geologist/GIS Specialist
+        Contact_Address:
+          Address_Type: mailing and physical address
+          Address: 1201 Oak Ridge Drive, Suite 200
+          City: Fort Collins
+          State_or_Province: Colorado
+          Postal_Code: 80525
+          Country: USA
+        Contact_Voice_Telephone: (970) 225-3584
+        Contact_Facsimile_Telephone: (970) 225-3597
+        Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+        Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+    Data_Category: Geology
+    Data_Site: NR-GIS
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: Unpublished Material
+      Title: Surficial Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCSUR)
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: vector digital data
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip
+      Larger_Work_Citation:
+        Citation_Information:
+          Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+          Publication_Date: 20050915
+          Title: Digital Geologic Map of Biscayne National Park
+  Description:
+    Abstract: The Surficial Units and Contacts of Biscayne National Park and Vicinity, Florida data (BISCSUR) consists of area (polygon) surficial units and the contacts/map boundary that defines those areas (polygons).  The data were completed as a component of the Geologic Resources Evaluation (GRE), a National Park Service (NPS) Inventory and Monitoring (I&M) funded program that is administered by the NPS Geologic Resources Division (GRD).  The spatial data (coverage/theme) was produced from a georeferenced .TIF image (300dpi) of the source map from a paper copy.  The coverage/theme (BISCSUR/BISCSURA) was attributed as per the NPS GIS-Geology Data Model.  An indexed ArcInfo .E00 (export) coverage file and an ArcView 3.X .SHP theme were then also created.  The coverage/theme is within the area of interest of Biscayne National Park.  The coverage/theme is in NAD83, UTM Zone 17N.
+    Purpose: Data intended to assist NPS personnel in the protection and management of Biscayne National Park.
+    Supplemental_Information: The Surficial Units and Contacts of Biscayne National Park and Vicinity, Florida coverage/theme (BISCSUR/BISCSURA) is a component of the Digital Geologic Map of Biscayne National Park.  Other coverages/themes that comprise the Digital Geologic Map of Biscayne National Park include: BISCGLG (area geologic units and contacts), BISCBEN (benthic habitat units and contacts), BISCMIN (mine and mine related point features) BISCHZA (area geologic hazards), and BISCSEC (geologic cross section lines).  Two accessory data tables, BISCGLG1 (accessory geologic unit data) and BISCMAP (source map information), are also considered map components.
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+    Currentness_Reference: ground condition
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -80.626315
+      East_Bounding_Coordinate: -80.176460
+      North_Bounding_Coordinate: 25.502224
+      South_Bounding_Coordinate: 24.999021
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: none
+      Theme_Keyword: Biscayne National Park
+      Theme_Keyword: Florida
+      Theme_Keyword: Homestead quadrangle
+      Theme_Keyword: geology
+      Theme_Keyword: surficial units
+      Theme_Keyword: surficial contacts
+      Theme_Keyword: SUR
+      Theme_Keyword: BISCSUR
+      Theme_Keyword: National Park Service
+      Theme_Keyword: NPS
+      Theme_Keyword: Geologic Resources Evaluation
+      Theme_Keyword: GRE
+    Place:
+      Place_Keyword_Thesaurus: none
+      Place_Keyword: Biscayne National Park
+      Place_Keyword: Florida
+      Place_Keyword: Dade County
+      Place_Keyword: Biscayne Bay
+      Place_Keyword: United States
+      Place_Keyword: US
+      Place_Keyword: USA
+      Place_Keyword: North America
+      Place_Keyword: BISC
+      Place_Keyword: Homestead quadrangle
+  Access_Constraints: None
+  Use_Constraints: Not for use at scale greater than 1:100,000 (source map scale).
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3585
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Data_Set_Credit: Anne R. Poole, Heather Stanton Richard Green, Ken Campbell, and Tom Scott
+  Native_Data_Set_Environment: Microsoft Windows XP OS; ArcGIS 9.X
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: 20050915
+      Title: Metadata for Surficial Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCSUR) .E00 (Export) File in BISCGRE.ZIP
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscsur.xml
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: 20050915
+      Title: Metadata for Surficial Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCSUR) .SHP (Shape) File in BISCGRS.ZIP
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscsur.xml
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: Attribution was derived and checked by visual comparison of data with a copy of the published FGS source map.  Users of this data are advised to FULLY and CAREFULLY READ the "DISTRIBUTION LIABILITY" section of this metadata before using the data.
+  Logical_Consistency_Report: Arc 'topology' present.
+  Completeness_Report: Data is considered complete to the extent of the published FGS source map.
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report: Data, captured from georeferenced .TIF image (300dpi) of the source map, is assumed to meet National Map Accuracy Standards.  The PRECISION of the ArcInfo coverage .E00/ArcView .SHP theme file is DOUBLE.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Ken Campbell, and Tom Scott
+          Publication_Date: 1995
+          Title: Surficial and bedrock geology of the eastern portion of the USGS 1:100,000 scale Homestead quadrangle: Plate 83/02 - Surficial Sediment Map
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 83/01-07
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Green, Richard, Campbell, Ken, and Scott, Tom, 1995, Surficial and bedrock geology of the eastern portion of the USGS 1:100,000 scale Homestead quadrangle: Florida Geological Survey, Open File Map Series 83/01-07, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1995
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: All surficial contact and map boundary arcs were captured (digitized) from a georeferenced .TIF image (300dpi) of the source map.  A copy of the published FGS source map was used to attribute features, as per the NPS GIS-Geology Data Model, and to check attribute and positional accuracy of the data.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Ken Campbell, and Tom Scott
+          Publication_Date: 1996
+          Title: Surficial and bedrock geology of the western portion of the USGS 1:100,000 scale Homestead quadrangle: Plate 83/09 - Surficial Sediment Map
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 83/08-12
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Green, Richard, Campbell, Ken, and Scott, Tom, 1996, Surficial and bedrock geology of the western portion of the USGS 1:100,000 scale Homestead quadrangle: Florida Geological Survey, Open File Map Series 83/08-12, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1996
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: All surficial contact and map boundary arcs were captured (digitized) from a georeferenced .TIF image (300dpi) of the source map.  A copy of the published FGS source map was used to attribute features, as per the NPS GIS-Geology Data Model, and to check attribute and positional accuracy of the data.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Thomas M. Scott
+          Publication_Date: 2001
+          Title: Geologic formations of Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: N/A
+            Issue_Identification: N/A
+          Publication_Information:
+            Publication_Place: Tallahasee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Scott, Thomas M., 2001, Geologic formations of Florida (geology_stratigraphy091201): Florida Geological Survey digital file 1:126,720. Available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm
+      Source_Scale_Denominator: 126720
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2001
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Shoreline arcs were produced from inherited data produced by the Florida Geological Survey.  A paper copy of the published FGS source map was used to attribute features, as per the NPS GIS-Geology Data Model, and to check attribute and positional accuracy of the data.
+    Process_Step:
+      Process_Description: Surficial contact and map boundary arcs were captured (digitized) from a georeferenced .TIF image (300dpi) of the source map scanned from a paper copy.  The georeferenced image was in NAD83, UTM projection.  The coordinates of this georeferenced image were in meters.  Shoreline arcs were copied from pre-exsisting digital data created by the FGS (Geologic Formations of Florida). These shorelines were originally digitized from 1:24,000-scale DRGs.  The arc features were captured in ArcMap 8.3 as an ArcGIS personal geodatabase.  The geodatabase was then converted to an ArcInfo coverage (BISCSUR) using the ArcToolbox.  Coverage topology (ArcInfo BUILD command) was then constructed and NPS GIS-Geology Data Model attribute fields added (ArcInfo ADDITEM command).  Data Model attribution was derived and checked using a copy of the published FGS source map. An indexed (ArcInfo INDEX command) ArcInfo .E00 (export) coverage file and an ArcView 3.X .SHP theme were then also created.
+      Source_Used_Citation_Abbreviation: published FGS source map
+      Process_Date: 20050405
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Anne R. Poole
+            Contact_Organization: National Park Service, Geologic Resources Division
+          Contact_Position: Physical Scientist
+          Contact_Address:
+            Address_Type: mailing address
+            Address: 12795 West Alameda Parkway
+            Address: P.O. Box 25287
+            City: Denver
+            State_or_Province: Colorado
+            Postal_Code: 80225-087
+            Country: USA
+          Contact_Voice_Telephone: (303) 987-6954
+          Contact_Facsimile_Telephone: (303) 987-6792
+          Contact_Electronic_Mail_Address: Anne_Poole@.nps.gov
+          Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+    Process_Step:
+      Process_Description: The data were imported into a geodatabase and topology was used to check for errors between and within data layers.  Topological errors were fixed and the data was exported to coverages, corrected to the data model and converted to shapefiles.
+      Source_Used_Citation_Abbreviation: source data (see Source Information)
+      Process_Date: 20050701
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Heather Stanton
+            Contact_Organization: Colorado State University
+          Contact_Position: Research Associate, Geologist/GIS Specialist
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: 1201 Oak Ridge Drive, Suite 200
+            City: Fort Collins
+            State_or_Province: Colorado
+            Postal_Code: 80525
+            Country: USA
+          Contact_Voice_Telephone: (970) 267-2159
+          Contact_Facsimile_Telephone: (970) 225-2597
+          Contact_Electronic_Mail_Address: Heather_Stanton@partner.nps.gov
+          Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+Spatial_Data_Organization_Information:
+  Direct_Spatial_Reference_Method: Vector
+  Point_and_Vector_Object_Information:
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: Complete chain
+      Point_and_Vector_Object_Count: 1057
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: Label point
+      Point_and_Vector_Object_Count: 588
+    SDTS_Terms_Description:
+      SDTS_Point_and_Vector_Object_Type: GT-polygon composed of chains
+      Point_and_Vector_Object_Count: 588
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Planar:
+      Grid_Coordinate_System:
+        Grid_Coordinate_System_Name: Universal Transverse Mercator
+        Universal_Transverse_Mercator:
+          UTM_Zone_Number: 17
+          Transverse_Mercator:
+            Scale_Factor_at_Central_Meridian: 0.999600
+            Longitude_of_Central_Meridian: -81.000000
+            Latitude_of_Projection_Origin: 0.000000
+            False_Easting: 500000.000000
+            False_Northing: 0.000000
+      Planar_Coordinate_Information:
+        Planar_Coordinate_Encoding_Method: coordinate pair
+        Coordinate_Representation:
+          Abscissa_Resolution: 0.000442
+          Ordinate_Resolution: 0.000442
+        Planar_Distance_Units: meters
+    Geodetic_Model:
+      Horizontal_Datum_Name: North American Datum of 1983
+      Ellipsoid_Name: Geodetic Reference System 80
+      Semi-major_Axis: 6378137.000000
+      Denominator_of_Flattening_Ratio: 298.257222
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: biscsur.aat/biscsura.dbf
+      Entity_Type_Definition: Surficial Contacts/Map Boundary arc attribute table
+      Entity_Type_Definition_Source: ArcGIS
+    Attribute:
+      Attribute_Label: FID
+      Attribute_Definition: Feature identification number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique feature identification integer
+    Attribute:
+      Attribute_Label: SHAPE
+      Attribute_Definition: Representation of the entity in the data
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Shape entity type
+    Attribute:
+      Attribute_Label: FNODE#
+      Attribute_Definition: Internal sequence number of the from-node
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Internal from-node integer
+    Attribute:
+      Attribute_Label: TNODE#
+      Attribute_Definition: Internal sequence number of the to-node
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Internal to-node integer
+    Attribute:
+      Attribute_Label: LPOLY#
+      Attribute_Definition: Internal sequence number of the left polygon
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Internal left-polygon integer
+    Attribute:
+      Attribute_Label: RPOLY#
+      Attribute_Definition: Internal sequence number of the right polygon
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Internal right-polygon integer
+    Attribute:
+      Attribute_Label: LENGTH
+      Attribute_Definition: Length of arc feature
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Length of feature
+    Attribute:
+      Attribute_Label: BISCSUR#
+      Attribute_Definition: Internal feature number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique internal identification integer
+    Attribute:
+      Attribute_Label: BISCSUR-ID
+      Attribute_Definition: Feature user identification number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: User-defined identification integer
+    Attribute:
+      Attribute_Label: SURCNT_IDX
+      Attribute_Definition: Unique identification number
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique identification integer
+    Attribute:
+      Attribute_Label: SURCNT_TYP
+      Attribute_Definition: Code value that designates the positional accuracy and/or concealment of a contact/map boundary arc
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Geologic contact/map boundary code value
+          Codeset_Source: NPS Geology-GIS Data Model
+    Attribute:
+      Attribute_Label: FLTCNT
+      Attribute_Definition: Designates contact arcs that are also geologic faults
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: Geologic contact/fault code value
+          Codeset_Source: NPS Geology-GIS Data Model
+    Attribute:
+      Attribute_Label: GMAP_ID
+      Attribute_Definition: Unique integer value assigned to the source map in the GRE GMAP_ID Database
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique integer value assigned to the source map in the GRE GMAP_ID database (see BISCMAP information look-up table)
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: biscsur.pat/biscsur.dbf
+      Entity_Type_Definition: Surficial Unit polygon attribute table
+      Entity_Type_Definition_Source: ArcGIS
+    Attribute:
+      Attribute_Label: FID
+      Attribute_Definition: Feature identification number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique feature identification integer
+    Attribute:
+      Attribute_Label: SHAPE
+      Attribute_Definition: Representation of the entity in the data
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Shape entity type
+    Attribute:
+      Attribute_Label: AREA
+      Attribute_Definition: Area of feature
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Area of feature
+    Attribute:
+      Attribute_Label: PERIMETER
+      Attribute_Definition: Perimeter of feature
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Perimeter of feature
+    Attribute:
+      Attribute_Label: BISCSUR#
+      Attribute_Definition: Internal feature number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique internal identification integer
+    Attribute:
+      Attribute_Label: BISCSUR-ID
+      Attribute_Definition: Feature user identification number
+      Attribute_Definition_Source: ArcGIS
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: User-defined identification integer
+    Attribute:
+      Attribute_Label: SUR_IDX
+      Attribute_Definition: Unique identification number
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique identification integer
+    Attribute:
+      Attribute_Label: GLG_SYM
+      Attribute_Definition: Age-lithology symbol/code of geologic unit
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Geologic symbol of geologic unit
+    Attribute:
+      Attribute_Label: USGS_SYM
+      Attribute_Definition: USGS Age-lithology symbol/code of geologic unit
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: USGS Geologic symbol of geologic unit
+    Attribute:
+      Attribute_Label: GLG_AGE_NO
+      Attribute_Definition: Value used to age-sort geologic units from youngest (low) to oldest (high)
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Age-sort number of geologic unit
+    Attribute:
+      Attribute_Label: GMAP_ID
+      Attribute_Definition: Unique integer value assigned to the source map in the GRE GMAP_ID Database
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Unique integer value assigned to the source map in the GRE GMAP_ID database (see BISCMAP information look-up table)
+    Attribute:
+      Attribute_Label: HELP_ID
+      Attribute_Definition: Text field used to establish a connection to a Windows Help File to display textual and/or graphical information on map feature
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Text field used to 'link' to a Windows Help File with supplementary information
+    Attribute:
+      Attribute_Label: SUR_NOTE
+      Attribute_Definition: Text note on surficial geologic unit
+      Attribute_Definition_Source: NPS GIS-Geology Data Model
+      Attribute_Domain_Values:
+        Unrepresentable_Domain: Text on surficial geologic unit
+  Overview_Description:
+    Entity_and_Attribute_Overview: Refer to the NPS GIS-Geology Data Model (available at http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.htm for detailed attribute field definitions as well as attribute field code and value definitions.
+    Entity_and_Attribute_Detail_Citation: NPS GIS-Geology Data Model
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 8:00 a.m. to 4:00 p.m. (MST), Monday - Friday
+      Contact_Instructions: Data are available at the NPS I&M NR-GIS Data Store Search Site: http://science.nature.nps.gov/nrdata
+  Resource_Description: BISCGRE.ZIP (ArcInfo coverages) or BISCGRS.ZIP (ArcView .SHP theme files)
+  Distribution_Liability:
+    The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein.  These data and related graphics are not legal documents and are not intended to be used as such.
+
+    The information contained in these data is dynamic and may change over time.  The data are not better than the original sources from which they were derived.  It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular.  The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data.
+
+    The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data.  It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way.  Although these data have been processed successfully on a computer system at the National Park Service, no warranty, expressed or implied is made regarding the utility of the data on another system or for general scientific purposes, nor shall the act of distribution constitute any such warranty.  This disclaimer applies to both to individual use of the data and aggregate use with other data.
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: E00
+        Format_Version_Number: ArcGIS 8.X and 9.X
+        Format_Specification: E00 (export) file
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 65.9
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+          Access_Instructions: Download metadata or ZIP file with E00 data
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: SHP
+        Format_Version_Number: ArcGIS
+        Format_Specification: SHP file
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 67.5
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip
+          Access_Instructions: Download metadata or ZIP file with SHP data
+    Fees: None
+    Ordering_Instructions: Search and download data .ZIP files at: http://science.nature.nps.gov/nrdata
+  Available_Time_Period:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+Metadata_Reference_Information:
+  Metadata_Date: 20050915
+  Metadata_Review_Date: 20050915
+  Metadata_Future_Review_Date: 20060915
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Heather Stanton
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 267-2159
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Heather_Stanton@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Access_Constraints: None
+  Metadata_Use_Constraints: None
+  Metadata_Extensions:
+    Online_Linkage: http://www.fgdc.gov/metadata/meta_stand.html
+    Profile_Name: FGDC Geospatial Metadata Standards
+  Metadata_Extensions:
+    Online_Linkage: http://nrdata.nps.gov/profiles/nps_profile.xml
+    Profile_Name: NPS NR and GIS Metadata Profile
+  Metadata_Extensions:
+    Online_Linkage: http://www.esri.com/metadata/esriprof80.html
+    Profile_Name: ESRI Metadata Profile

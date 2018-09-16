@@ -1,0 +1,586 @@
+NPS_Information:
+  Metadata_Purpose: CSDGM
+  Metadata_Purpose: NPS
+  Metadata_Purpose: OnlineData
+  NPS_Unit_Information:
+    NPS_Unit_Type: Park
+    NPS_Unit_AlphaCode: BISC
+  Datacat_Information:
+    Datacat_Edit_Date:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+  Data_Store_Information:
+    Data_Steward:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Stephanie O'Meara
+          Contact_Organization: Colorado State University
+        Contact_Position: Research Associate, Geologist/GIS Specialist
+        Contact_Address:
+          Address_Type: mailing and physical address
+          Address: 1201 Oak Ridge Drive, Suite 200
+          City: Fort Collins
+          State_or_Province: Colorado
+          Postal_Code: 80525
+          Country: USA
+        Contact_Voice_Telephone: (970) 225-3584
+        Contact_Facsimile_Telephone: (970) 225-3597
+        Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+        Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+    Data_Category: Geology
+    Data_Site: NR-GIS
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: Unpublished Material
+      Title: Geologic Map Accessory Help File (NPS, GRE, BISC, BISC_GEOLOGY.HLP)
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip 
+      Larger_Work_Citation:
+        Citation_Information:
+          Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+          Publication_Date: 20050915
+          Title: Digital Geologic Map of Biscayne National Park
+  Description:
+    Abstract: The BISC_GEOLOGY.HLP file is an accessory help file for the Geologic Map of Biscayne National Park and Vicinity, Florida.  The file was completed as a component of the Geologic Resources Evaluation (GRE), a National Park Service (NPS) Inventory and Monitoring (I&M) funded program that is administered by the NPS Geologic Resources Division (GRD).  The file contains textual and graphical figure information present on the source geologic map(s).  NPS GIS-Geology Data Model coverages with geologic unit information present rely on this accessory help file to present source map geologic unit descriptions and the correlation of geologic units.  The help file may also contain reference citations present on the source map(s) as well as any map notes, author notes and ancillary text and figures.  Other NPS GIS-Geology Data Model coverages may also have relevant information within the help file (e.g. Faulting, Jointing, Radiometric Dating etc.) if present on the source map(s).
+    Purpose: Data intended to assist NPS personnel in the protection and management of Biscayne National Park.
+    Supplemental_Information: The accessory BISC_GEOLOGY.HLP file is considered a component of the Digital Geologic Map of Biscayne National Park.  Two accessory data tables, BISCGLG1 (accessory geologic unit data) and BISCMAP (source map information), are also considered map components.  These data files are in addition to any NPS Geology-GIS Data Model coverages/themes derived from the source map(s).
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+    Currentness_Reference: ground condition
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -80.627482
+      East_Bounding_Coordinate: -80.124105
+      North_Bounding_Coordinate: 25.877527
+      South_Bounding_Coordinate: 24.998339
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: None
+      Theme_Keyword: Biscayne National Park
+      Theme_Keyword: Florida
+      Theme_Keyword: geology
+      Theme_Keyword: geologic map unit descriptions
+      Theme_Keyword: geologic map units
+      Theme_Keyword: GLG
+      Theme_Keyword: help file
+      Theme_Keyword: ancillary information
+      Theme_Keyword: textual map information
+      Theme_Keyword: source map information
+      Theme_Keyword: source map text
+      Theme_Keyword: source map figures
+      Theme_Keyword: source map references
+      Theme_Keyword: National Park Service
+      Theme_Keyword: NPS
+      Theme_Keyword: Geologic Resources Evaluation
+      Theme_Keyword: GRE
+    Place:
+      Place_Keyword_Thesaurus: none
+      Place_Keyword: Biscayne National Park
+      Place_Keyword: Florida
+      Place_Keyword: Dade County
+      Place_Keyword: Biscayne Bay
+      Place_Keyword: United States
+      Place_Keyword: US
+      Place_Keyword: USA
+      Place_Keyword: North America
+      Place_Keyword: BISC
+  Access_Constraints: None
+  Use_Constraints: Not for use at scale greater than 1:126,720 (source map scale).
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3585
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Data_Set_Credit: Anne R. Poole, Heather Stanton the Florida Geological Survey and Thomas M. Scott; USGS; NOAA
+  Native_Data_Set_Environment: Microsoft Windows XP OS; ArcGIS 9.X
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: 20050915
+      Title: Metadata for Geologic Map Accessory Help File of Biscayne National Park, Florida (NPS, GRE, BISC, BISCHLP) in .E00 (Export) .ZIP Download File
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/bischlp.xml
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Evaluation (GRE) program.
+      Publication_Date: 20050915
+      Title: Metadata for Geologic Map Accessory Help File of Biscayne National Park, Florida (NPS, GRE, BISC, BISCHLP) in .SHP (Shape) .ZIP Download File
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/bischlp.xml
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: Textual information and figure were derived from and checked with the published source paper map(s).  Users of this data are advised to FULLY and CAREFULLY READ the "DISTRIBUTION LIABILITY" section of this metadata before using the data.
+  Logical_Consistency_Report: .HLP format
+  Completeness_Report: Data is considered complete.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Thomas M. Scott
+          Publication_Date: 2001
+          Title: Geologic formations of Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: N/A
+            Issue_Identification: N/A
+          Publication_Information:
+            Publication_Place: Tallahasee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Scott, Thomas M., 2001, Geologic formations of Florida (geology_stratigraphy091201): Florida Geological Survey digital file 1:126,720. Available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm
+      Source_Scale_Denominator: 126720
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2001
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map 
+      Source_Contribution: Help file contains information from source map text, notes, references and figures. 
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Thomas M. Scott
+          Publication_Date: 2001
+          Title: Text to Accompany the Geologic Map of Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open-File Report
+            Issue_Identification: 80
+          Publication_Information:
+            Publication_Place: Tallahasee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Scott, Thomas M., 2001, Text to Accompany the Geologic Map of Florida: Florida Geological Survey Open-File Report 80. Available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm
+      Source_Scale_Denominator: N/A
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2001
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map 
+      Source_Contribution: Help file contains information from source map text, notes, references and figures. 
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Ken Campbell, and Tom Scott
+          Publication_Date: 1995
+          Title: Surficial and bedrock geology of the eastern portion of the USGS 1:100,000 scale Homestead quadrangle: Plate 83/02 - Surficial Sediment Map
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 83/01-07
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Green, Richard, Campbell, Ken, and Scott, Tom, 1995, Surficial and bedrock geology of the eastern portion of the USGS 1:100,000 scale Homestead quadrangle: Florida Geological Survey, Open File Map Series 83/01-07, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1995
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures. 
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Ken Campbell, and Tom Scott
+          Publication_Date: 1996
+          Title: Surficial and bedrock geology of the western portion of the USGS 1:100,000 scale Homestead quadrangle: Plate 83/09 - Surficial Sediment Map
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 83/08-12
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Green, Richard, Campbell, Ken, and Scott, Tom, 1996, Surficial and bedrock geology of the western portion of the USGS 1:100,000 scale Homestead quadrangle: Florida Geological Survey, Open File Map Series 83/08-12, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1996
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures. 
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Florida Fish and Wildlife Commission Florida Marine Research Center
+          Publication_Date: 1999
+          Title: Benthic Habitats of Florida Bay, FL 1991-1995
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: CD-ROM
+            Issue_Identification: N/A
+          Publication_Information:
+            Publication_Place: Charleston, SC
+            Publisher: National Oceanic and Atmospheric Administration Coastal Services Center
+          Other_Citation_Details: Florida Fish and Wildlife Commission Florida Marine Research Center, 1999, Benthic Habitats of Florida Bay, FL 1991-1995, CD-ROM: National Oceanic and Atmospheric Administration Coastal Services Center,1:48000 scale
+      Source_Scale_Denominator: 48000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1999
+        Source_Currentness_Reference: publication date 
+      Source_Citation_Abbreviation: NOAA digital data
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Tom Scott, Ken Campbell, and G.H. Means
+          Publication_Date: 1998
+          Title: Surficial and bedrock geology of the eastern portion of the U.S.G.S. 1:100,000 scale Sarasota quadrangle and the western portion of the U.S.G.S. 1:100,000 scale Arcadia quadrangle, south-central Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 87
+          Publication_Information:
+            Publication_Place: Tallahassee, FL
+            Publisher: USGS
+          Other_Citation_Details: Green, Richard, Scott, Tom, Campbell, Ken, and Means, G.H., 1998, Surficial and bedrock geology of the eastern portion of the U.S.G.S. 1:100,000 scale Sarasota quadrangle and the western portion of the U.S.G.S. 1:100,000 scale Arcadia quadrangle, south-central Florida: Florida Geological Survey, Open File Map Series 87, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1998
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, G.H. Means, Tom Scott, Jon Arthur, Ken Campbell
+          Publication_Date: 1999
+          Title: Surficial and bedrock geology of the eastern portion of the U.S.G.S. 1:100,000 scale Arcadia quadrangle, south-central Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 88
+          Publication_Information:
+            Publication_Place: Tallahassee, FL
+            Publisher: USGS
+          Other_Citation_Details: Green, Richard, Means, G.H., Scott, Tom, Arthur, Jon, and Campbell, Ken, 1999, Surficial and bedrock geology of the eastern portion of the U.S.G.S. 1:100,000 scale Arcadia quadrangle, south-central Florida: Florida Geological Survey, Open File Map Series 88, scale 1:100000. 
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1999
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Richard Green, Tom Scott, Ken Campbell, Jon Arthur, and G.H.Means
+          Publication_Date: 1997
+          Title: Surficial and bedrock geology of the western portion of the U.S.G.S. 1:100,000 scale Sarasota quadrangle, south-central Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open File Map Series
+            Issue_Identification: 86
+          Publication_Information:
+            Publication_Place: Tallahassee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Green, Richard, Scott, Tom, Campbell, Ken, Arthur, Jon, and Means, G.H., 1997, Surficial and bedrock geology of the western portion of the U.S.G.S. 1:100,000 scale Sarasota quadrangle, south-central Florida: Florida Geological Survey, Open File Map Series 86, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1997
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Lucy McCartan and Wai-See Moy
+          Publication_Date: 1995
+          Title: Geologic maps of the Sarasota and Arcadia, Florida 30x60-minute quadrangles
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open-File Report
+            Issue_Identification: OF-95-261
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: USGS
+          Other_Citation_Details: McCartan, Lucy and Moy, Wai-See, 1995, Geologic maps of the Sarasota and Arcadia, Florida 30x60-minute quadrangles: U.S. Geological Survey, Open-File Report OF-95-261, scale 1:100000.
+      Source_Scale_Denominator: 100000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1995
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published USGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: C.R. Causaras
+          Publication_Date: 1985
+          Title: Geology of the surficial aquifer system, Broward County, Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Water-Resources Investigations Report
+            Issue_Identification: 84-4068
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: USGS
+          Other_Citation_Details: Causaras, C.R., 1985, Geology of the surficial aquifer system, Broward County, Florida: U.S. Geological Survey, Water-Resources Investigations Report 84-4068, scale 1:134000. 
+      Source_Scale_Denominator: 134000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1985
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published USGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: C.R. Causaras
+          Publication_Date: 1986
+          Title: Geology of the surficial aquifer system, Dade County, Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Water-Resources Investigations Report
+            Issue_Identification: 86-4126
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: USGS
+          Other_Citation_Details: Causaras, C.R., 1986, Geology of the surficial aquifer system, Dade County, Florida: U.S. Geological Survey, Water-Resources Investigations Report 86-4126, scale 1:136000. 
+      Source_Scale_Denominator: 136000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1986
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published USGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: M.H. Bergendahl
+          Publication_Date: 1956
+          Title: Stratigraphy of parts of De Soto and Hardee Counties, Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Bulletin
+            Issue_Identification: 1030-B
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: USGS
+          Other_Citation_Details: Bergendahl, M.H., 1956, Stratigraphy of parts of De Soto and Hardee Counties, Florida: U.S. Geological Survey, Bulletin 1030-B, scale 1:158400.
+      Source_Scale_Denominator: 158400
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 1956
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published USGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: R.S. Reese and K.J.Cunningham
+          Publication_Date: 2000
+          Title: Hydrogeology of the gray limestone aquifer in southern Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Water-Resources Investigations Report
+            Issue_Identification: 99-4213
+          Publication_Information:
+            Publication_Place: Reston, Virginia
+            Publisher: USGS
+          Other_Citation_Details: Reese, R.S. and Cunningham, K.J., 2000, Hydrogeology of the gray limestone aquifer in southern Florida: U.S. Geological Survey, Water-Resources Investigations Report 99-4213, 1:675000 scale
+      Source_Scale_Denominator: 675000
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2000
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published USGS source map
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Arthur, J.D., Baker, A.E., Cichon, J.R., Wood, A.R., and Rudin, A.
+          Publication_Date: 2005
+          Title: Florida Aquifer Vulnerability Assessment (FAVA):  Contamination potential of Florida's principal aquifer systems
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: vector digital data
+          Series_Information:
+            Series_Name: Florida Geological Survey Bulletin
+            Issue_Identification: N/A
+          Publication_Information:
+            Publication_Place: Tallahassee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Arthur, J.D., Baker, A.E., Cichon, J.R., Wood, A.R., and Rudin, A., 2005, Florida Aquifer Vulnerability Assessment (FAVA):  Contamination potential of Florida's principal aquifer systems, Florida Geological Survey, 1:24,000 scale (available at ftp://ftp.dep.state.fl.us/pub/geo/hydrogeology/fava/fava_data/ctds_shp.zip)
+      Source_Scale_Denominator: 24000
+      Type_of_Source_Media: computer file
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2005
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: unpublished FGS digital data (Arthur, J.D., Baker, A.E., Cichon, J.R., Wood, A.R., and Rudin, A., 2005, Florida Aquifer Vulnerability Assessment (FAVA):  Contamination potential of Florida's principal aquifer systems, Florida Geological Survey, 1:24,000 scale)
+      Source_Contribution: Help file contains information from source map text, notes, references and figures.
+    Process_Step:
+      Process_Description: The BISC_GEOLOGY.HLP help file was produced from textual information and figures present on the source map(s) that comprise the Geologic Map of Biscayne National Park and Vicinity, Florida.  Source maps were scanned at 150dpi or greater resolution and optical character recognition (OCR) software used to produce text from source map text.  Source map figures were saved as .BMP files.  The OCR text was then checked for spelling and formatted to best reproduce the source map text font, font size, font style etc.  The text was then incorporated, along with source map .BMP figures and other ancillary source map information, into a .RTF file formatted for Windows help file compilation.  Help file pages, 'hyper-links' and keywords were then added.  The .RTF file was then compiled using Microsoft Help file compilation software to produce the .HLP help file.  Any compilation errors were then checked and corrected (compilation warnings may yet exist within these files).
+      Process_Date: 20050405
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Anne R. Poole
+            Contact_Organization: National Park Service, Geologic Resources Division
+          Contact_Position: Physical Scientist
+          Contact_Address:
+            Address_Type: mailing address
+            Address: 12795 West Alameda Parkway
+            Address: P.O. Box 25287
+            City: Denver
+            State_or_Province: Colorado
+            Postal_Code: 80225-087
+            Country: USA
+          Contact_Voice_Telephone: (303) 987-6954
+          Contact_Facsimile_Telephone: (303) 987-6792
+          Contact_Electronic_Mail_Address: Anne_Poole@.nps.gov
+          Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 8:00 a.m. to 4:00 p.m. (MST), Monday - Friday
+      Contact_Instructions: Data are available at the NPS I&M NR-GIS Data Store Search Site: http://science.nature.nps.gov/nrdata
+  Resource_Description: BISC_GEOLOGY.HLP.  File within BISCGRE.ZIP (ArcInfo coverages) and BISCGRS.ZIP (ArcView .SHP theme files)
+  Distribution_Liability:
+    The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein.  These data and related graphics are not legal documents and are not intended to be used as such.
+
+    The information contained in these data is dynamic and may change over time.  The data are not better than the original sources from which they were derived.  It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular.  The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data.
+
+    The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data.  It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way.  Although these data have been processed successfully on a computer system at the National Park Service, no warranty, expressed or implied is made regarding the utility of the data on another system or for general scientific purposes, nor shall the act of distribution constitute any such warranty.  This disclaimer applies to both to individual use of the data and aggregate use with other data.
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: HLP
+        Format_Version_Number: 4.03 and higher versions
+        Format_Specification: Windows HLP file
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 65.9
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+          Access_Instructions: Download metadata or ZIP file with E00 data
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: HLP
+        Format_Version_Number: 4.03 and higher versions
+        Format_Specification: Windows Help file
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 67.5
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip
+          Access_Instructions: Download metadata or ZIP file with SHP data
+    Fees: None
+    Ordering_Instructions: Search and download data .ZIP files at: http://science.nature.nps.gov/nrdata
+  Available_Time_Period:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20050915
+Metadata_Reference_Information:
+  Metadata_Date: 20050915
+  Metadata_Review_Date: 20050915
+  Metadata_Future_Review_Date: 20060915
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Heather Stanton
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 267-2159
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Heather_Stanton@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Access_Constraints: None
+  Metadata_Use_Constraints: None
+  Metadata_Extensions:
+    Online_Linkage: http://www.fgdc.gov/metadata/meta_stand.html
+    Profile_Name: FGDC Geospatial Metadata Standards
+  Metadata_Extensions:
+    Online_Linkage: http://nrdata.nps.gov/profiles/nps_profile.xml
+    Profile_Name: NPS NR and GIS Metadata Profile

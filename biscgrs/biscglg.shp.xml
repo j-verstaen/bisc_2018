@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<metadata>
+	<NPS_Info>
+		<MetaPurp>CSDGM</MetaPurp>
+		<MetaPurp>NPS</MetaPurp>
+		<MetaPurp>OnlineData</MetaPurp>
+		<NPS_Unit>
+			<UnitType>Park</UnitType>
+			<UnitCode>BISC</UnitCode>
+		</NPS_Unit>
+		<DSC_Info>
+			<Cat_Date>
+				<sngdate>
+					<caldate>20050915</caldate>
+				</sngdate>
+			</Cat_Date>
+		</DSC_Info>
+		<DatStore>
+			<DSteward>
+				<cntinfo>
+					<cntperp>
+						<cntper>Stephanie O'Meara</cntper>
+						<cntorg>Colorado State University</cntorg>
+					</cntperp>
+					<cntpos>Research Associate, Geologist/GIS Specialist</cntpos>
+					<cntaddr>
+						<addrtype>mailing and physical address</addrtype>
+						<address>1201 Oak Ridge Drive, Suite 200</address>
+						<city>Fort Collins</city>
+						<state>Colorado</state>
+						<postal>80525</postal>
+						<country>USA</country>
+					</cntaddr>
+					<cntvoice>(970) 225-3584</cntvoice>
+					<cntfax>(970) 225-3597</cntfax>
+					<cntemail>Stephanie_O'Meara@partner.nps.gov</cntemail>
+					<hours>9:00 a.m. to 5:00 p.m. (MST), Monday - Friday</hours>
+				</cntinfo>
+			</DSteward>
+			<Category>Geology</Category>
+			<DataSite>NR-GIS</DataSite>
+		</DatStore>
+	</NPS_Info>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>National Park Service Geologic Resources Evaluation (GRE) program.</origin>
+				<pubdate>Unpublished Material</pubdate>
+				<title>Geologic Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCGLG)</title>
+				<edition>1st</edition>
+				<geoform>vector digital data</geoform>
+				<onlink>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip</onlink>
+				<onlink>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip</onlink>
+				<lworkcit>
+					<citeinfo>
+						<origin>National Park Service Geologic Resources Evaluation (GRE) program.</origin>
+						<pubdate>20050915</pubdate>
+						<title>Digital Geologic Map of Biscayne National Park</title>
+					</citeinfo>
+				</lworkcit>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>The Geologic Units and Contacts of Biscayne National Park and Vicinity, Florida data (BISCGLG) consists of area (polygon) geologic units and the contacts/map boundary that defines those areas (polygons).  The data were completed as a component of the Geologic Resources Evaluation (GRE), a National Park Service (NPS) Inventory and Monitoring (I&amp;M) funded program that is administered by the NPS Geologic Resources Division (GRD).  The spatial data (coverage/theme) was produced from inherited data produced by the FGS.  The coverage/theme (BISCGLG/BISCGLGA) was attributed as per the NPS GIS-Geology Data Model.  An indexed ArcInfo .E00 (export) coverage file and an ArcView 3.X .SHP theme were then also created.  The coverage/theme is within the area of interest of Biscayne National Park.  The coverage/theme is in NAD83, UTM Zone 17N.</abstract>
+			<purpose>Data intended to assist NPS personnel in the protection and management of Biscayne National Park.</purpose>
+			<supplinf>The Geologic Units and Contacts of Biscayne National Park and Vicinity, Florida coverage/theme (BISCGLG/BISCGLGA) is a component of the Digital Geologic Map of Biscayne National Park.  Other coverages/themes that comprise the Digital Geologic Map of Biscayne National Park include: BISCSUR (surficial geologic units and contacts), BISCBEN (benthic habitat units and contacts), BISCMIN (mine and mine related point features) BISCHZA (area geologic hazards), and BISCSEC (geologic cross section lines).  Two accessory data tables, BISCGLG1 (accessory geologic unit data) and BISCMAP (source map information), are also considered map components.</supplinf>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>20050915</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>None planned</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-80.627482</westbc>
+				<eastbc>-80.124105</eastbc>
+				<northbc>25.877527</northbc>
+				<southbc>24.998339</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>none</themekt>
+				<themekey>Biscayne National Park</themekey>
+				<themekey>Florida</themekey>
+				<themekey>geology</themekey>
+				<themekey>geologic units</themekey>
+				<themekey>geologic contacts</themekey>
+				<themekey>GLG</themekey>
+				<themekey>BISCGLG</themekey>
+				<themekey>National Park Service</themekey>
+				<themekey>NPS</themekey>
+				<themekey>Geologic Resources Evaluation</themekey>
+				<themekey>GRE</themekey>
+				<themekey>Florida Geological Survey</themekey>
+			</theme>
+			<place>
+				<placekt>none</placekt>
+				<placekey>Biscayne National Park</placekey>
+				<placekey>Florida</placekey>
+				<placekey>Dade County</placekey>
+				<placekey>Biscayne Bay</placekey>
+				<placekey>United States</placekey>
+				<placekey>US</placekey>
+				<placekey>USA</placekey>
+				<placekey>North America</placekey>
+				<placekey>BISC</placekey>
+			</place>
+		</keywords>
+		<accconst>None</accconst>
+		<useconst>Not for use at scale greater than 1:126,720 (source map scale).</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Stephanie O'Meara</cntper>
+					<cntorg>Colorado State University</cntorg>
+				</cntperp>
+				<cntpos>Research Associate, Geologist/GIS Specialist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1201 Oak Ridge Drive, Suite 200</address>
+					<city>Fort Collins</city>
+					<state>Colorado</state>
+					<postal>80525</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(970) 225-3584</cntvoice>
+				<cntfax>(970) 225-3585</cntfax>
+				<cntemail>Stephanie_O'Meara@partner.nps.gov</cntemail>
+				<hours>9:00 a.m. to 5:00 p.m. (MST), Monday - Friday</hours>
+			</cntinfo>
+		</ptcontac>
+		<datacred>Anne R. Poole, Heather Stanton the Florida Geological Survey and Thomas M. Scott</datacred>
+		<native>Microsoft Windows XP OS; ArcGIS 9.X</native>
+		<crossref>
+			<citeinfo>
+				<origin>National Park Service Geologic Resources Evaluation (GRE) program.</origin>
+				<pubdate>20050915</pubdate>
+				<title>Metadata for Geologic Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCGLG) .E00 (Export) File in BISCGRE.ZIP</title>
+				<edition>1st</edition>
+				<geoform>document</geoform>
+				<onlink>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscglg.xml</onlink>
+			</citeinfo>
+		</crossref>
+		<crossref>
+			<citeinfo>
+				<origin>National Park Service Geologic Resources Evaluation (GRE) program.</origin>
+				<pubdate>20050915</pubdate>
+				<title>Metadata for Geologic Units and Contacts of Biscayne National Park and Vicinity, Florida (NPS, GRE, BISC, BISCGLG) .SHP (Shape) File in BISCGRS.ZIP</title>
+				<edition>1st</edition>
+				<geoform>document</geoform>
+				<onlink>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscglg.xml</onlink>
+			</citeinfo>
+		</crossref>
+	</idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>Attribution was derived from inherited attribution and checked by visual comparison with a paper copy of the published FGS source map.  Users of this data are advised to FULLY and CAREFULLY READ the "DISTRIBUTION LIABILITY" section of this metadata before using the data.</attraccr>
+		</attracc>
+		<logic>Arc 'topology' present.</logic>
+		<complete>Data is considered complete to the extent of the published FGS source map.</complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Data, produced from inherited data produced by the FGS, is assumed to meet National Map Accuracy Standards.  The PRECISION of the ArcInfo coverage .E00/ArcView .SHP theme file is DOUBLE.</horizpar>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Thomas M. Scott</origin>
+						<pubdate>2001</pubdate>
+						<title>Geologic formations of Florida</title>
+						<edition>1st</edition>
+						<geoform>map</geoform>
+						<serinfo>
+							<sername>N/A</sername>
+							<issue>N/A</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>Tallahasee, FL</pubplace>
+							<publish>Florida Geological Survey</publish>
+						</pubinfo>
+						<othercit>Scott, Thomas M., 2001, Geologic formations of Florida (geology_stratigraphy091201): Florida Geological Survey digital file 1:126,720. Available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm</othercit>
+					</citeinfo>
+				</srccite>
+				<srcscale>126720</srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2001</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>published FGS source map</srccitea>
+				<srccontr>All geologic contact and map boundary arcs were produced from inherited data produced by the Florida Geological Survey.  A paper copy of the published FGS source map was used to attribute features, as per the NPS GIS-Geology Data Model, and to check attribute and positional accuracy of the data.</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Thomas M. Scott</origin>
+						<pubdate>2001</pubdate>
+						<title>Text to Accompany the Geologic Map of Florida</title>
+						<edition>1st</edition>
+						<geoform>map</geoform>
+						<serinfo>
+							<sername>Open-File Report</sername>
+							<issue>80</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>Tallahasee, FL</pubplace>
+							<publish>Florida Geological Survey</publish>
+						</pubinfo>
+						<othercit>Scott, Thomas M., 2001, Text to Accompany the Geologic Map of Florida: Florida Geological Survey Open-File Report 80. Available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm</othercit>
+					</citeinfo>
+				</srccite>
+				<srcscale>N/A</srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>2001</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>publication date</srccurr>
+				</srctime>
+				<srccitea>published FGS source map</srccitea>
+				<srccontr>Unit descriptions for digital map</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>Geologic contact and map boundary arcs were produced from inherited data produced by the FGS.  Data features were converted to an ArcInfo coverage (BISCGLG) and coverage topology (ArcInfo BUILD command) was then constructed.  Data Model attribution was derived from inherited attribution and from a paper copy of the published FGS source paper map.  If needed, the data were then 're-projected' (ArcInfo PROJECT command) into NAD83, UTM Zone 17N.  An indexed (ArcInfo INDEX command) ArcInfo .E00 (export) coverage file and an ArcView 3.X .SHP theme were then also created.</procdesc>
+				<srcused>published FGS source map &amp; paper</srcused>
+				<procdate>20050405</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Anne R. Poole</cntper>
+							<cntorg>National Park Service, Geologic Resources Division</cntorg>
+						</cntperp>
+						<cntpos>Physical Scientist</cntpos>
+						<cntaddr>
+							<addrtype>mailing address</addrtype>
+							<address>12795 West Alameda Parkway</address>
+							<address>P.O. Box 25287</address>
+							<city>Denver</city>
+							<state>Colorado</state>
+							<postal>80225-087</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>(303) 987-6954</cntvoice>
+						<cntfax>(303) 987-6792</cntfax>
+						<cntemail>Anne_Poole@.nps.gov</cntemail>
+						<hours>9:00 a.m. to 5:00 p.m. (MST), Monday - Friday</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>The data were imported into a geodatabase and topology was used to check for errors between and within data layers.  Topological errors were fixed and the data was exported to coverages, corrected to the data model and converted to shapefiles.</procdesc>
+				<srcused>source data (see Source Information)</srcused>
+				<procdate>20050701</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Heather Stanton</cntper>
+							<cntorg>Colorado State University</cntorg>
+						</cntperp>
+						<cntpos>Research Associate, Geologist/GIS Specialist</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>1201 Oak Ridge Drive, Suite 200</address>
+							<city>Fort Collins</city>
+							<state>Colorado</state>
+							<postal>80525</postal>
+							<country>USA</country>
+						</cntaddr>
+						<cntvoice>(970) 267-2159</cntvoice>
+						<cntfax>(970) 225-2597</cntfax>
+						<cntemail>Heather_Stanton@partner.nps.gov</cntemail>
+						<hours>9:00 a.m. to 5:00 p.m. (MST), Monday - Friday</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct>Vector</direct>
+		<ptvctinf>
+			<sdtsterm>
+				<sdtstype>Complete chain</sdtstype>
+				<ptvctcnt>776</ptvctcnt>
+			</sdtsterm>
+			<sdtsterm>
+				<sdtstype>Label point</sdtstype>
+				<ptvctcnt>576</ptvctcnt>
+			</sdtsterm>
+			<sdtsterm>
+				<sdtstype>GT-polygon composed of chains</sdtstype>
+				<ptvctcnt>576</ptvctcnt>
+			</sdtsterm>
+		</ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<gridsys>
+					<gridsysn>Universal Transverse Mercator</gridsysn>
+					<utm>
+						<utmzone>17</utmzone>
+						<transmer>
+							<sfctrmer>0.999600</sfctrmer>
+							<longcm>-81.000000</longcm>
+							<latprjo>0.000000</latprjo>
+							<feast>500000.000000</feast>
+							<fnorth>0.000000</fnorth>
+						</transmer>
+					</utm>
+				</gridsys>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>0.000772</absres>
+						<ordres>0.000772</ordres>
+					</coordrep>
+					<plandu>meters</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>North American Datum of 1983</horizdn>
+				<ellips>Geodetic Reference System 80</ellips>
+				<semiaxis>6378137.000000</semiaxis>
+				<denflat>298.257222</denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>biscglg.aat/biscglga.dbf</enttypl>
+				<enttypd>Geologic Contacts/Map Boundary arc attribute table</enttypd>
+				<enttypds>ArcGIS</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Feature identification number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Unique feature identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>SHAPE</attrlabl>
+				<attrdef>Representation of the entity in the data</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Shape entity type</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FNODE#</attrlabl>
+				<attrdef>Internal sequence number of the from-node</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Internal from-node integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>TNODE#</attrlabl>
+				<attrdef>Internal sequence number of the to-node</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Internal to-node integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>LPOLY#</attrlabl>
+				<attrdef>Internal sequence number of the left polygon</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Internal left-polygon integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>RPOLY#</attrlabl>
+				<attrdef>Internal sequence number of the right polygon</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Internal right-polygon integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>LENGTH</attrlabl>
+				<attrdef>Length of arc feature</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Length of feature</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>BISCGLG#</attrlabl>
+				<attrdef>Internal feature number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Unique internal identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>BISCGLG-ID</attrlabl>
+				<attrdef>Feature user identification number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>User-defined identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GLGCNT_IDX</attrlabl>
+				<attrdef>Unique identification number</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Unique identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GLGCNT_TYP</attrlabl>
+				<attrdef>Code value that designates the positional accuracy and/or concealment of a contact/map boundary arc</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>Geologic contact/map boundary code value</codesetn>
+						<codesets>NPS Geology-GIS Data Model</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FLTCNT</attrlabl>
+				<attrdef>Designates contact arcs that are also geologic faults</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>Geologic contact/fault code value</codesetn>
+						<codesets>NPS Geology-GIS Data Model</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GMAP_ID</attrlabl>
+				<attrdef>Unique integer value assigned to the source map in the GRE GMAP_ID Database</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Unique integer value assigned to the source map in the GRE GMAP_ID database (see BISCMAP information look-up table)</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<detailed>
+			<enttyp>
+				<enttypl>biscglg.pat/biscglg.dbf</enttypl>
+				<enttypd>Area Geologic Unit polygon attribute table</enttypd>
+				<enttypds>ArcGIS</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>FID</attrlabl>
+				<attrdef>Feature identification number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Unique feature identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>SHAPE</attrlabl>
+				<attrdef>Representation of the entity in the data</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Shape entity type</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>AREA</attrlabl>
+				<attrdef>Area of feature</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Area of feature</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>PERIMETER</attrlabl>
+				<attrdef>Perimeter of feature</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Perimeter of feature</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>BISCGLG#</attrlabl>
+				<attrdef>Internal feature number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>Unique internal identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>BISCGLG-ID</attrlabl>
+				<attrdef>Feature user identification number</attrdef>
+				<attrdefs>ArcGIS</attrdefs>
+				<attrdomv>
+					<udom>User-defined identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GLG_IDX</attrlabl>
+				<attrdef>Unique identification number</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Unique identification integer</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GLG_SYM</attrlabl>
+				<attrdef>Age-lithology symbol/code of geologic unit</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Geologic symbol of geologic unit</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>USGS_SYM</attrlabl>
+				<attrdef>FGS Age-lithology symbol/code of geologic unit</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>FGS Geologic symbol of geologic unit</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GLG_AGE_NO</attrlabl>
+				<attrdef>Value used to age-sort geologic units from youngest (low) to oldest (high)</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Age-sort number of geologic unit</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>GMAP_ID</attrlabl>
+				<attrdef>Unique integer value assigned to the source map in the GRE GMAP_ID Database</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Unique integer value assigned to the source map in the GRE GMAP_ID database (see BISCMAP information look-up table)</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HELP_ID</attrlabl>
+				<attrdef>Text field used to establish a connection to a Windows Help File to display textual and/or graphical information on map feature</attrdef>
+				<attrdefs>NPS GIS-Geology Data Model</attrdefs>
+				<attrdomv>
+					<udom>Text field used to 'link' to a Windows Help File with supplementary information</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<overview>
+			<eaover>Refer to the NPS GIS-Geology Data Model (available at http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.htm for detailed attribute field definitions as well as attribute field code and value definitions.</eaover>
+			<eadetcit>NPS GIS-Geology Data Model</eadetcit>
+		</overview>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>Stephanie O'Meara</cntper>
+					<cntorg>Colorado State University</cntorg>
+				</cntperp>
+				<cntpos>Research Associate, Geologist/GIS Specialist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1201 Oak Ridge Drive, Suite 200</address>
+					<city>Fort Collins</city>
+					<state>Colorado</state>
+					<postal>80525</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(970) 225-3584</cntvoice>
+				<cntfax>(970) 225-3597</cntfax>
+				<cntemail>Stephanie_O'Meara@partner.nps.gov</cntemail>
+				<hours>8:00 a.m. to 4:00 p.m. (MST), Monday - Friday</hours>
+				<cntinst>Data are available at the NPS I&amp;M NR-GIS Data Store Search Site: http://science.nature.nps.gov/nrdata</cntinst>
+			</cntinfo>
+		</distrib>
+		<resdesc>BISCGRE.ZIP (ArcInfo coverages) or BISCGRS.ZIP (ArcView .SHP theme files)</resdesc>
+		<distliab>
+The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein.  These data and related graphics are not legal documents and are not intended to be used as such.
+
+The information contained in these data is dynamic and may change over time.  The data are not better than the original sources from which they were derived.  It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular.  The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data.
+
+The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data.  It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way.  Although these data have been processed successfully on a computer system at the National Park Service, no warranty, expressed or implied is made regarding the utility of the data on another system or for general scientific purposes, nor shall the act of distribution constitute any such warranty.  This disclaimer applies to both to individual use of the data and aggregate use with other data.
+</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>E00</formname>
+					<formvern>ArcGIS 8.X and 9.X</formvern>
+					<formspec>E00 (export) file</formspec>
+					<filedec>Compression applied</filedec>
+					<transize>65.9</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip</networkr>
+							</networka>
+						</computer>
+						<accinstr>Download metadata or ZIP file with E00 data</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<digform>
+				<digtinfo>
+					<formname>SHP</formname>
+					<formvern>ArcGIS</formvern>
+					<formspec>SHP file</formspec>
+					<filedec>Compression applied</filedec>
+					<transize>67.5</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+								<networkr>http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip</networkr>
+							</networka>
+						</computer>
+						<accinstr>Download metadata or ZIP file with SHP data</accinstr>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>None</fees>
+			<ordering>Search and download data .ZIP files at: http://science.nature.nps.gov/nrdata</ordering>
+		</stdorder>
+		<availabl>
+			<timeinfo>
+				<sngdate>
+					<caldate>20050915</caldate>
+				</sngdate>
+			</timeinfo>
+		</availabl>
+	</distinfo>
+	<metainfo>
+		<metd>20050915</metd>
+		<metrd>20050915</metrd>
+		<metfrd>20060915</metfrd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Heather Stanton</cntper>
+					<cntorg>Colorado State University</cntorg>
+				</cntperp>
+				<cntpos>Research Associate, Geologist/GIS Specialist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>1201 Oak Ridge Drive, Suite 200</address>
+					<city>Fort Collins</city>
+					<state>Colorado</state>
+					<postal>80525</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(970) 267-2159</cntvoice>
+				<cntfax>(970) 225-3597</cntfax>
+				<cntemail>Heather_Stanton@partner.nps.gov</cntemail>
+				<hours>9:00 a.m. to 5:00 p.m. (MST), Monday - Friday</hours>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001-1998</metstdv>
+		<mettc>local time</mettc>
+		<metac>None</metac>
+		<metuc>None</metuc>
+		<metextns>
+			<onlink>http://www.fgdc.gov/metadata/meta_stand.html</onlink>
+			<metprof>FGDC Geospatial Metadata Standards</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://nrdata.nps.gov/profiles/nps_profile.xml</onlink>
+			<metprof>NPS NR and GIS Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+	</metainfo>
+</metadata>
