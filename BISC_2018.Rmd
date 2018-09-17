@@ -13,11 +13,15 @@ library(tidyverse)
 library(readxl)
 library(dplyr)
 library(ggplot2)
-library(vegan) #for species diversity calculations
+library(vegan) #species diversity calculations
 library(sf) #spatial
 library(sp) #spatial
 library(gstat) #spatial
 library(rgdal) #spatial
+library(factoextra) #cluster
+library(cluster) #cluster
+library(magrittr) #cluster
+
 
 ```
 
@@ -268,12 +272,37 @@ biplot(gamefish_coral_PCA)
 - i will try to show a color range indicating the amount of bleaching/paling 
 - don't know how i can incorporate fish into this...
 
+```{r}
+
+##########################################################################
+###########################################################################
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral_negs <- read_excel("2018_bisc_coral_cover_negs.xlsx")
+
+fish_coral <- merge(fish, coral_negs, by = "site")
+
+#how does the coral health effect the game fish abundance (snappers, groupers, hogfish)
+gamefish_coral_negs <- fish_coral %>%
+  filter( fish_com != "banded_butterflyfish" | fish_com != "foureyed_butterflyfish" | fish_com != "reef_butterflyfish" | fish_com != "spotfin_butterflyfish" | fish_com != "none") %>%
+  select(fish_num, f_avg, coral_cover, percent_total_bleached, percent_ind_bleached, paling_coral, percent_paling, percent_p_b) 
+##########################################################################
+
+###don't even know what im doing here####
+scale(gamefish_coral_negs)
+res.dist <- get_dist(gamefish_coral_negs, stand = TRUE, method = "pearson")
+fviz_dist(res.dist, 
+   gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
+
+fviz_nbclust(gamefish_coral_negs, kmeans, method = "gap_stat")
+
+```
 
 
 
 
 
 ##Spatial Mapping and Analysis
+get back to this, whole mess of not working
 
 ```{r}
 ################################################################
