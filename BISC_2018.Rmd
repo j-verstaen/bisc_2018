@@ -14,6 +14,10 @@ library(readxl)
 library(dplyr)
 library(ggplot2)
 library(vegan) #for species diversity calculations
+library(sf) #spatial
+library(sp) #spatial
+library(gstat) #spatial
+library(rgdal) #spatial
 
 ```
 
@@ -129,7 +133,7 @@ correlation_bleach_pale
 ```
 
 
-  ##IS CORAL COVER CORRELATED WITH GROUPER, HOGFISH, and SNAPPER NUMBERS##
+##IS CORAL COVER CORRELATED WITH GAMEFISH (GROUPER, HOGFISH, and SNAPPER NUMBERS)
   
 ```{r}
 
@@ -182,7 +186,7 @@ correlation_game_percentpb
   
 ## DOES CORAL HEALTH (cover, % of coral bleaching, percent of coral diseased, whether or not paling) EFFECT GAME FISH NUMBERS##
 
-##put off until figure out how to deal with NAs and in the coral bleaching (/the other columns)
+### took two approaches, 1: removing NAs, 2: replacing them with -1
 ```{r}
 
 ##########################################################################
@@ -260,14 +264,68 @@ biplot(gamefish_coral_PCA)
 ```
 
 ##Cluster Analysis
+- need to relearn how to import maps and lay the data over it 
+- i will try to show a color range indicating the amount of bleaching/paling 
+- don't know how i can incorporate fish into this...
+
+
+
+
+
+
+##Spatial Mapping and Analysis
 
 ```{r}
+################################################################
+######Combine attribute and lat/lon data#######################
+################################################################
+gps_coord <- read_excel("bisc _rvc_2018 _sites .xlsx")
+fish <- read_excel("2018_bisc_RVC_Fish_condensed.xlsx")
+coral_negs <- read_excel("2018_bisc_coral_cover_negs.xlsx")
 
+fish_coral <- merge(fish, coral_negs, by = "site")
+gps_fish_coral <- merge(fish_coral, gps_coord, by = "site")
 
+bisc_ben <- st_read(dsn = ".", layer = "biscben")
+parks <- st_read(dsn = ".", layer = "nps_boundary")
+states <- st_read(dsn = ".", layer = "cb_2017_us_state_20m")
 
+df_fishcoral <- st_as_sf(gps_fish_coral, coords = c("lat","long"))
+
+st_crs(bisc_ben) <- 4326
+st_crs(parks) <- 4326
+st_crs(states) <- 4326
+
+st_transform(parks, 4326)
+st_transform(bisc_ben, 4326)
+st_transform(states, 4326)
+
+################################
+####exploratory ploting########
+###############################
+
+percent_p_b_spatial <- df_fishcoral  %>% 
+  dplyr::select(percent_p_b)
+
+plot(percent_p_b_spatial) 
+plot(states) 
+
+############################
+#########ggploting##########
+############################
+ggplot(percent_p_b_spatial) +
+  geom_sf(data = bisc_ben, fill = "gray60") +
+  geom_sf(aes(color = percent_p_b_spatial)) +
+  scale_color_gradient(low = "yellow", high = "red") +
+  theme_bw() +
+  ggtitle("California PM2.5 (12/10/2017)") +
+  theme(legend.position = "none") # Woohoo!
 ```
 
 
+
+## Kriging
+- don't think i will do this because I'm not asking a predictive questions ex: "based on bleaching at site x and y what is bleaching like at site z"
 
 
 

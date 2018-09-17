@@ -1,0 +1,318 @@
+NPS_Information:
+  Metadata_Purpose: CSDGM
+  Metadata_Purpose: NPS
+  Metadata_Purpose: OnlineData
+  Metadata_Purpose: IMInventory
+  NPS_Unit_Information:
+    NPS_Unit_Type: Park
+    NPS_Unit_AlphaCode: BISC
+  NPS_Unit_Information:
+    NPS_Unit_Type: Office
+    NPS_Unit_AlphaCode: GRD
+  Datacat_Information:
+    Datacat_Edit_Date:
+      Single_Date/Time:
+        Calendar_Date: 20090604
+  Data_Store_Information:
+    Data_Steward:
+      Contact_Information:
+        Contact_Person_Primary:
+          Contact_Person: Stephanie O'Meara
+          Contact_Organization: Colorado State University
+        Contact_Position: Research Associate, Geologist/GIS Specialist
+        Contact_Address:
+          Address_Type: mailing and physical address
+          Address: 1201 Oak Ridge Drive, Suite 200
+          City: Fort Collins
+          State_or_Province: Colorado
+          Postal_Code: 80525
+          Country: USA
+        Contact_Voice_Telephone: (970) 225-3584
+        Contact_Facsimile_Telephone: (970) 225-3597
+        Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+        Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+    Data_Category: Geology
+    Data_Site: NR-GIS
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: National Park Service (NPS) Geologic Resources Inventory (GRI) program
+      Publication_Date: 20090604
+      Title: Digital Geologic Map of Biscayne National Park and vicinity, Florida (NPS, GRD, GRI, BISC)
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: map
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip 
+  Description:
+    Abstract: The Digital Geologic Map of Biscayne National Park and vicinity, Florida is composed of GIS data layers, two ancillary GIS tables, a Windows Help File with ancillary map text, figures and tables, GIS data layer and table FGDC metadata and ArcView 3.X legend (.AVL) files.  The data were completed as a component of the Geologic Resources Inventory (GRI) program, a National Park Service (NPS) Inventory and Monitoring (I&M) funded program that is administered by the NPS Geologic Resources Division (GRD).  All GIS and ancillary tables were produced as per the NPS GIS-Geology Coverage/Shapefile Data Model (available at: http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.cfm).  The GIS data is available as coverage and table export (.E00) files, and as a shapefile (.SHP) and DBASEIV (.DBF) table files.  The GIS data projection is NAD83, UTM Zone 17N.  That data is within the area of interest of Biscayne National Park.
+    Purpose: The data are intended to assist NPS personnel in the protection and management of Biscayne National Park.
+    Supplemental_Information: The data layers (feature classes) that comprise the Digital Geologic Map of Biscayne National Park and vicinity, Florida include: BISCGLG (geologic units and contacts), BISCSUR (surficial geologic units and contacts), BISCBEN (benthic habitat units and contacts), BISCMIN (mine and mine related point features) BISCHZA (area geologic hazards), and BISCSEC (geologic cross section lines).  There are three additional ancillary map components, the Geologic Unit Information (BISCGLG1) Table, the Source Map Information (BISCMAP) Table and the Map Help File (BISCGLG.HLP).  Refer to the NPS GIS-Geology Coverage/Shapefile Data (available at: http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.cfm) for detailed data layer and table specifications including attribute field parameters, definitions and domains.
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20090604
+    Currentness_Reference: ground condition
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -80.627482
+      East_Bounding_Coordinate: -80.124105
+      North_Bounding_Coordinate: 25.877527
+      South_Bounding_Coordinate: 24.998339
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: none
+      Theme_Keyword: Biscayne National Park
+      Theme_Keyword: BISC
+      Theme_Keyword: Florida
+      Theme_Keyword: digital data
+      Theme_Keyword: GIS data
+      Theme_Keyword: digital geologic map
+      Theme_Keyword: digital geologic-GIS map
+      Theme_Keyword: geologic map
+      Theme_Keyword: geologic-GIS map
+      Theme_Keyword: geology
+      Theme_Keyword: National Park Service
+      Theme_Keyword: NPS
+      Theme_Keyword: Geologic Resources Division
+      Theme_Keyword: GRD
+      Theme_Keyword: Geologic Resources Inventory
+      Theme_Keyword: GRI
+      Theme_Keyword: Geologic Resources Evaluation
+      Theme_Keyword: GRE
+    Place:
+      Place_Keyword_Thesaurus: none
+      Place_Keyword: Biscayne National Park
+      Place_Keyword: BISC
+      Place_Keyword: Dade County
+      Place_Keyword: Biscayne Bay
+      Place_Keyword: Florida
+      Place_Keyword: United States
+      Place_Keyword: US
+      Place_Keyword: USA
+      Place_Keyword: North America
+    Place:
+      Place_Keyword_Thesaurus: National Park System Unit Code Thesaurus
+      Place_Keyword: BISC
+      Place_Keyword: GRD
+    Place:
+      Place_Keyword_Thesaurus: National Park System Unit Name Thesaurus
+      Place_Keyword: Biscayne National Park
+      Place_Keyword: Geologic Resources Division
+    Theme:
+      Theme_Keyword_Thesaurus: National Park Service Theme Category Thesaurus
+      Theme_Keyword: Geology
+    Theme:
+      Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+      Theme_Keyword: Environment
+      Theme_Keyword: Geoscientific Information
+  Access_Constraints: None
+  Use_Constraints: Not for use at scale greater than 1:126,720 (source map scale)
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Data_Set_Credit: Anne R. Poole (NPS GRD), Heather Stanton (Colorado State University) and the Florida Geological Survey
+  Native_Data_Set_Environment: ESRI ArcGIS 9.1 and Microsoft Windows XP
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Inventory (GRI) program
+      Publication_Date: 20090604
+      Title: Metadata for the Digital Geologic Map of Biscayne National Park and vicinity, Florida (NPS, GRD, GRI, BISC) Export (.E00) Files (within BISCGRI.ZIP)
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/bisc_gremap.xml
+  Cross_Reference:
+    Citation_Information:
+      Originator: National Park Service Geologic Resources Inventory (GRI) program
+      Publication_Date: 20090604
+      Title: Metadata for the Digital Geologic Map of Biscayne National Park and vicinity, Florida (NPS, GRD, GRI, BISC) Shapefile (.SHP) Files (within BISCGRS.ZIP)
+      Edition: 1st
+      Geospatial_Data_Presentation_Form: document
+      Online_Linkage: http://nrdata.nps.gov/bisc/nrdata/geology/gis/bisc_gremap.xml
+Data_Quality_Information:
+  Attribute_Accuracy:
+    Attribute_Accuracy_Report: Feature and table attribution was derived and checked with the source map(s).  Attribution was checked (QCd) for errors.  Users of this data are advised to FULLY and CAREFULLY READ the "DISTRIBUTION LIABILITY" section of this metadata before using the data.
+  Logical_Consistency_Report: GIS data in coverage and table export (.E00) file and shapefile (.SHP) and DBASEIV (.DBF) table file formats.
+  Completeness_Report: All data is considered complete to the extent of the source map(s).
+  Positional_Accuracy:
+    Horizontal_Positional_Accuracy:
+      Horizontal_Positional_Accuracy_Report: GIS spatial data, digitized from a georeferenced source map .TIF image(s) (300dpi), is assumed to meet National Map Accuracy Standards.  The PRECISION of Export (.E00) files and Shapefile (.SHP) files is DOUBLE.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Thomas M. Scott
+          Publication_Date: 2001
+          Title: Geologic formations of Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: N/A
+            Issue_Identification: N/A
+          Publication_Information:
+            Publication_Place: Tallahasee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Florida Geological Survey digital file available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm
+      Source_Scale_Denominator: 126720
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2001
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map
+      Source_Contribution: Geologic features were produced from inherited data produced by the Florida Geological Survey.  A paper copy of the published FGS source map was used to attribute features, as per the NPS GIS-Geology Data Model, and to check attribute and positional accuracy of the data.  Table attribution was derived from source map(s) text and notes.
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: Thomas M. Scott
+          Publication_Date: 2001
+          Title: Text to Accompany the Geologic Map of Florida
+          Edition: 1st
+          Geospatial_Data_Presentation_Form: map
+          Series_Information:
+            Series_Name: Open-File Report
+            Issue_Identification: 80
+          Publication_Information:
+            Publication_Place: Tallahasee, FL
+            Publisher: Florida Geological Survey
+          Other_Citation_Details: Florida Geological Survey Open-File Report 80, available at http://www.dep.state.fl.us/geology/gisdatamaps/state_geo_map.htm
+      Source_Scale_Denominator: N/A
+      Type_of_Source_Media: paper
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 2001
+        Source_Currentness_Reference: publication date
+      Source_Citation_Abbreviation: published FGS source map report
+      Source_Contribution: Unit descriptions for digital map
+    Process_Step:
+      Process_Description: Geologic features were were produced from inherited data produced by the FGS.  Data Model attribution was derived from inherited attribution and from a paper copy of the published FGS source paper map.  Table attribution was derived and checked using the published FGS source paper map.  Features were exported from each data layer coverage to shapefile (.SHP) format.  Tables were exported from INFO tables to DBASEIV (.DBF) file formats.
+      Source_Used_Citation_Abbreviation: published FGS source map and map report
+      Process_Date: 20090604
+      Process_Contact:
+        Contact_Information:
+          Contact_Person_Primary:
+            Contact_Person: Stephanie O'Meara
+            Contact_Organization: Colorado State University
+          Contact_Position: Research Associate, Geologist/GIS Specialist
+          Contact_Address:
+            Address_Type: mailing and physical address
+            Address: 1201 Oak Ridge Drive, Suite 200
+            City: Fort Collins
+            State_or_Province: Colorado
+            Postal_Code: 80525
+            Country: USA
+          Contact_Voice_Telephone: (970) 225-3584
+          Contact_Facsimile_Telephone: (970) 225-3597
+          Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+          Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+Entity_and_Attribute_Information:
+  Overview_Description:
+    Entity_and_Attribute_Overview: Refer to the NPS GIS-Geology Coverage/Shapefile Data (available at: http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.cfm) for detailed feature class and table attribute field parameters, definitions and domains.
+    Entity_and_Attribute_Detail_Citation: NPS GIS-Geology Coverage/Shapefile Data Model (available at: http://science.nature.nps.gov/im/inventory/geology/GeologyGISDataModel.cfm)
+Distribution_Information:
+  Distributor:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 8:00 a.m. to 4:00 p.m. (MST), Monday - Friday
+      Contact_Instructions: GRI data are available at the NPS Data Store: http://science.nature.nps.gov/nrdata
+  Resource_Description: GIS map data available in BISCGRI.ZIP (coverage and table export (.E00) files) or BISCGRS.ZIP (shapefile (.SHP) and DBASEIV (.DBF) table files)
+  Distribution_Liability:
+    The National Park Service shall not be held liable for improper or incorrect use of the data described and/or contained herein.  These data and related graphics are not legal documents and are not intended to be used as such.
+
+    The information contained in these data is dynamic and may change over time.  The data are not better than the original sources from which they were derived.  It is the responsibility of the data user to use the data appropriately and consistent within the limitations of geospatial data in general and these data in particular.  The related graphics are intended to aid the data user in acquiring relevant data; it is not appropriate to use the related graphics as data.
+
+    The National Park Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of these data.  It is strongly recommended that these data are directly acquired from an NPS server and not indirectly through other sources which may have changed the data in some way.  Although these data have been processed successfully on a computer system at the National Park Service, no warranty, expressed or implied is made regarding the utility of the data on another system or for general scientific purposes, nor shall the act of distribution constitute any such warranty.  This disclaimer applies to both to individual use of the data and aggregate use with other data.
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: E00
+        Format_Version_Number: ArcGIS 9.1
+        Format_Specification: Coverage and Table Export (.E00) files
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 65.9
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgre.zip
+          Access_Instructions: Download the digital geologic-GIS map metadata (BISC_GRIMAP.XML) or the .ZIP download file (BISCGRI.ZIP).
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: SHP
+        Format_Version_Number: ArcGIS 9.1
+        Format_Specification: Shapefile (.SHP) and DBASEIV (.DBF) table files
+        File_Decompression_Technique: Compression applied
+        Transfer_Size: 67.5
+      Digital_Transfer_Option:
+        Online_Option:
+          Computer_Contact_Information:
+            Network_Address:
+              Network_Resource_Name: http://nrdata.nps.gov/bisc/nrdata/geology/gis/biscgrs.zip
+          Access_Instructions: Download the digital geologic-GIS map metadata (BISC_GRIMAP.XML) or the .ZIP download file (BISCGRS.ZIP).
+    Fees: None
+    Ordering_Instructions: Search and download GRI data at: http://science.nature.nps.gov/nrdata
+  Available_Time_Period:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 20090604
+Metadata_Reference_Information:
+  Metadata_Date: 20090604
+  Metadata_Contact:
+    Contact_Information:
+      Contact_Person_Primary:
+        Contact_Person: Stephanie O'Meara
+        Contact_Organization: Colorado State University
+      Contact_Position: Research Associate, Geologist/GIS Specialist
+      Contact_Address:
+        Address_Type: mailing and physical address
+        Address: 1201 Oak Ridge Drive, Suite 200
+        City: Fort Collins
+        State_or_Province: Colorado
+        Postal_Code: 80525
+        Country: USA
+      Contact_Voice_Telephone: (970) 225-3584
+      Contact_Facsimile_Telephone: (970) 225-3597
+      Contact_Electronic_Mail_Address: Stephanie_O'Meara@partner.nps.gov
+      Hours_of_Service: 9:00 a.m. to 5:00 p.m. (MST), Monday - Friday
+  Metadata_Standard_Name: FGDC Content Standards for Digital Geospatial Metadata
+  Metadata_Standard_Version: FGDC-STD-001-1998
+  Metadata_Time_Convention: local time
+  Metadata_Access_Constraints: None
+  Metadata_Use_Constraints: None
+  Metadata_Extensions:
+    Online_Linkage: http://www.fgdc.gov/metadata/meta_stand.html
+    Profile_Name: FGDC Geospatial Metadata Standards
+  Metadata_Extensions:
+    Online_Linkage: http://nrdata.nps.gov/profiles/nps_profile.xml
+    Profile_Name: NPS NR and GIS Metadata Profile
