@@ -34,6 +34,17 @@ gps_coord <- read_excel("bisc _rvc_2018 _sites .xlsx")
 ```
 
 
+##Species Richness Test###
+
+```{r}
+coral_species_numbers <- read_excel("2018_bisc_coral_species_numbers.xlsx")
+
+#remember the last line of data here is the total of all sites##
+c_shan <- diversity(coral_species_numbers)
+c_shan
+
+plot(c_shan)
+```
 
 
 ##Is coral cover corelated with percent bleached?
@@ -70,9 +81,28 @@ percent_total_b <- as.numeric(coral_cover_bleach$percent_total_bleached)
 #correlation: person's r
 correlation_cover_bleach <- cor.test(coral_cover_bleach$coral_cover, percent_total_b)
 correlation_cover_bleach
-# not significant. p-value = 0.4654
+# not significant. p-value = 0.2397
 
 ```
+
+####how did i do speciec richness and coral cover correlation... need to remember
+```{r}
+
+#is coral cover correltated with species richness
+correlation_cover_richness <- cor.test(coral$coral_cover, c_shan)
+correlation_cover_richness
+#not significantly correlated p - 0.4029187
+
+#is paling/bleaching correlated to species richness
+
+correlation_cover_richness <- cor.test(coral_cover_bleach$percent_p_b, c_shan)
+correlation_cover_richness
+
+```
+
+
+
+
 
 ##THIS LOOKS AT PERCENT OF THE NUMBERS OF CORALS BLEACHED. NOT THE AMOUNT BLEACHED##
 ```{r}
@@ -104,6 +134,8 @@ correlation_number_bleach <- cor.test(coral_number_bleach$coral_cover, percent_i
 correlation_number_bleach
 # not significant. p-value = 0.3009
 ```
+
+
 ##THIS LOOKS AT PERCENT OF THE NUMBERS OF CORALS BLEACHED AND/OR PALING. NOT THE AMOUNT BLEACHED##
 
 ```{r}
@@ -294,6 +326,9 @@ fviz_dist(res.dist,
    gradient = list(low = "#00AFBB", mid = "white", high = "#FC4E07"))
 
 fviz_nbclust(gamefish_coral_negs, kmeans, method = "gap_stat")
+
+#http://www.sthda.com/english/articles/25-cluster-analysis-in-r-practical-guide/111-types-of-clustering-methods-overview-and-quick-start-r-code/
+##handy code for clustering
 
 ```
 
