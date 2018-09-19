@@ -44,6 +44,8 @@ c_shan <- diversity(coral_species_numbers)
 c_shan
 
 plot(c_shan)
+
+
 ```
 
 
@@ -89,14 +91,15 @@ correlation_cover_bleach
 ```{r}
 
 #is coral cover correltated with species richness
-correlation_cover_richness <- cor.test(coral$coral_cover, c_shan)
+correlation_cover_richness <- cor.test(coral$coral_cover, coral$species_richness)
 correlation_cover_richness
-#not significantly correlated p - 0.4029187
+#not significantly correlated p = 0.1132
 
 #is paling/bleaching correlated to species richness
-
-correlation_cover_richness <- cor.test(coral_cover_bleach$percent_p_b, c_shan)
-correlation_cover_richness
+percent_p_b_vec <- as.numeric(coral$percent_p_b)
+correlation_pb_richness <- cor.test(percent_p_b_vec, coral$species_richness)
+correlation_pb_richness
+#not sig p = 0.2692
 
 ```
 
